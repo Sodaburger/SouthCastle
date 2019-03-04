@@ -249,7 +249,7 @@
 								</div>
 							</div>
 
-							<div class="c1 col-xs-12 media wrapper-post">
+							<div class="c2 col-xs-12 media wrapper-post">
 								<!-- Thumbnail -->
 								<div class="media-left thumb-overlay">
 									<a class="link-thumb" href="blog-detail.html">
@@ -269,7 +269,7 @@
 								</div>
 							</div>
 
-							<div class="c1 col-xs-12 media wrapper-post">
+							<div class="c3 col-xs-12 media wrapper-post">
 								<!-- Thumbnail -->
 								<div class="media-left thumb-overlay">
 									<a class="link-thumb" href="blog-detail.html">
@@ -290,11 +290,32 @@
 								</div>
 							</div>
 
-							<div class="c2 col-xs-12 media wrapper-post">
+							<div class="c4 col-xs-12 media wrapper-post">
 								<!-- Thumbnail -->
 								<div class="media-left thumb-overlay">
 									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="FroYo Empo" />
+										<img class="thumb" src="https://via.placeholder.com/245x180" alt="Sego Lily CAD" />
+									</a>
+									<time class="published" datetime="2011">2014</time>
+								</div>
+								<!-- Post content -->
+								<div class="media-body content">
+									<span class="location">Salt Lake City, Utah</span>
+									<h3 class="media-heading title">
+										<a href="blog-detail.html">Sego Lily Center for the Abused Deaf</a></h3>
+									<strong class="job-title">Graphic Designer</strong>
+									<ul class="description">
+										<li>Designed flyer for annual "Purple Tie Gala"</li>
+										<li>Designed flyer &amp; t-shirt for "Cycling Heros" 5K Race</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="c5 col-xs-12 media wrapper-post">
+								<!-- Thumbnail -->
+								<div class="media-left thumb-overlay">
+									<a class="link-thumb" href="blog-detail.html">
+										<img class="thumb" src="https://via.placeholder.com/245x180" alt="FFE" />
 									</a>
 									<time class="published" datetime="2012">2011-2012</time>
 								</div>
@@ -312,7 +333,7 @@
 								</div>
 							</div>
 
-							<div class="c3 col-xs-12 media wrapper-post">
+							<div class="c6 col-xs-12 media wrapper-post">
 								<!-- Thumbnail -->
 								<div class="media-left thumb-overlay">
 									<a class="link-thumb" href="blog-detail.html">
@@ -327,7 +348,7 @@
 										<a href="blog-detail.html">Pioneer Craft House</a></h3>
 									<strong class="job-title">Graphic/Web Designer</strong>
 									<ul class="description">
-										<li>Created new Pioneer Craft House logo, utilizing Illustrator</li>
+										<li>Redesigned  Pioneer Craft House logo, utilizing Illustrator</li>
 										<li>Designed organization&rsquo;s website utilizing WordPress, Drupal</li>
 									</ul>
 								</div>
