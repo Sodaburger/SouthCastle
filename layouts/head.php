@@ -54,7 +54,7 @@
 	<link rel="dns-prefetch" href="//ssl.google-analytics.com" />
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cinzel+Decorative|Cabin:400,400i,600" />
 <?php if (isset($bodyClass) && ($bodyClass == "body-blog blog-category")): ?>
-	<link rel="stylesheet" src="theme/css/blog.min.css" />
+	<link rel="stylesheet" href="theme/css/blog.min.css" />
 <?php else: ?>
 	<!-- nothing -->
 <?php endif ?>

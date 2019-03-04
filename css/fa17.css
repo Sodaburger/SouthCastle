@@ -292,6 +292,14 @@ a { color: #c0392b; }
 /*-Blog-Page---------------------------------------------------------------*/
 .body-blog .navbar-nav > .uptop { display: none; }
 
+.body-blog .module-categories .list-grid { top: -7px; }
+
+.wrapper-pagination .nav-pills { float: right; }
+
+.wrapper-pagination .nav-pills > li > a:hover, .wrapper-pagination .nav-pills > li > a:focus { background-color: #c0392b; color: #fff; }
+
+.wrapper-pagination .nav-pills > li.active > a { background-color: #c0392b; color: #fff; }
+
 /*---------------------------------------------------------------Blog-Page-*/
 /*-Footer------------------------------------------------------------------*/
 .footer .footer-logo { /* border: none; box-shadow: none; background-color: transparent; &:before, &:after {box-shadow: none; } .logo.waxseal { max-width: 124px; } */ }
