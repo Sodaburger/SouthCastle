@@ -1,0 +1,50 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * shame.scss
+ * =========================================================================
+ * because hacks happen.
+ *
+ * be very specific about what each piece of code is doing, 
+ * and how to better fix it later
+ * =========================================================================
+ *
+ * The Rules
+ * -----------------
+ *
+ * + If it's a hack, it goes in _shame.scss
+ * + Document all hacks *fully*
+ *	 - What part of the codebase does it relate to?
+ *	 - Why was this needed?
+ *	 - How does this fix it?
+ *	 - How might you fix it properly, given more time?
+ * + Do not blame the developer; if they explained why they had to do it then their reasons are probably (hopefully) valid.
+ * + We will routinely clean shame.scss up from time to time.
+ *
+ * Read more: http://csswizardry.com/2013/04/shame-css/
+ *
+ * @TODO: Update RULES as necessary.
+ *
+ * @BUG:
+ *
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/*-Quick Fix Example-------------------------------------------------------*/
+/* Nav specificity fix.
+ *
+ * Someone used an ID in the header code (`#header a {}`) which trumps the nav selectors (`.site-nav a {}`).
+ * Use !important to override it until I have time to re-factor the header stuff.
+ */
+// .site-nav a {
+//	color: #BADA55 !important;
+// }
+
+/*-Quick Fix 1-------------------------------------------------------------*/
+/*-Quick Fix 2-------------------------------------------------------------*/
+/*-Quick Fix 3-------------------------------------------------------------*/
+/*-Quick Fix 4-------------------------------------------------------------*/
+/*-Quick Fix 5-------------------------------------------------------------*/
+/*-Quick Fix 6-------------------------------------------------------------*/
+/*-Quick Fix 7-------------------------------------------------------------*/
+/*-Quick Fix 8-------------------------------------------------------------*/

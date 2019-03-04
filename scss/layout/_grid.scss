@@ -1,0 +1,157 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * grid.scss
+ * =========================================================================
+ *
+ * Table of Contents
+ * -----------------
+ *
+ * + Media Query Ranges
+ * + Breakpoints
+ * + Containers (Bootstrap)
+ * + Category Columns
+ *
+ * @TODO: Update TOC as necessary.
+ *
+ * @BUG:
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/*-Media Query Ranges------------------------------------------------------*/
+$xsmall-breakpoint: 479px;
+$small-breakpoint:  767px;
+$medium-breakpoint: 991px;
+$large-breakpoint:  1199px;
+$xlarge-breakpoint: 1919px;
+
+$xsmall-range:  (0, $xsmall-breakpoint);
+$small-range:   (0, $small-breakpoint);
+$medium-range:  ($small-breakpoint  + 1, $medium-breakpoint);
+$large-range:   ($medium-breakpoint + 1, $large-breakpoint);
+$xlarge-range:  ($large-breakpoint  + 1, $xlarge-breakpoint);
+$xxlarge-range: ($xlarge-breakpoint + 1, 99999999px);
+
+$screen: "only screen";
+
+$xsmall-only: "(max-width: #{upper-bound($xsmall-range)})";
+$small-only: "(max-width: #{upper-bound($small-range)})";
+
+$medium-down: "(max-width:#{upper-bound($medium-range)})";
+$medium-up: "(min-width:#{lower-bound($medium-range)})";
+$medium-only: "(min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
+
+$large-down: "(max-width:#{upper-bound($large-range)})";
+$large-up: "(min-width:#{lower-bound($large-range)})";
+$large-only: "(min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
+
+$xlarge-down: "(max-width:#{upper-bound($xlarge-range)})";
+$xlarge-up: "(min-width:#{lower-bound($xlarge-range)})";
+$xlarge-only: "(min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+
+$xxlarge-up: "(min-width:#{lower-bound($xxlarge-range)})";
+$xxlarge-only: "(min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+/*------------------------------------------------------Media Query Ranges-*/
+
+/*-Breakpoints-------------------------------------------------------------*/
+@media #{$xsmall-only} {} //(max:479)
+@media #{$small-only} {} //(max:767)
+
+@media #{$medium-up} {} //(min:768)
+@media #{$medium-only} {} //(min:768) and (max:991)
+
+@media #{$large-up} {} //(min:992)
+@media #{$large-only} {} //(min:992) and (max:1199)
+
+@media #{$xlarge-up} {} //(min:1200)
+@media #{$xlarge-only} {} //(min:1200) and (max:1919)
+
+@media #{$xxlarge-up} {} //(min:1920)
+/*-------------------------------------------------------------Breakpoints-*/
+
+/*-Bootstrap-Containers----------------------------------------------------*/
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	min-width: rem-calc(290px);
+}
+@media #{$medium-up} {
+	.container { width: 750px; }
+}
+@media #{$large-up} {
+	.container { width: 970px; }
+}
+@media #{$xlarge-up} {
+	.container { width: 1145px; }
+}
+.container-fluid {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	// margin-right: auto;
+	// margin-left: auto;
+}
+
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+@media (min-width: 768px) {
+	.container > .navbar-header,
+	.container-fluid > .navbar-header,
+	.container > .navbar-collapse,
+	.container-fluid > .navbar-collapse {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+@media (min-width: 768px) {
+	.navbar > .container .navbar-brand,
+	.navbar > .container-fluid .navbar-brand {
+		margin-left: -15px;
+	}
+}
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after {
+	display: table;
+	content: " ";
+}
+.container:after,
+.container-fluid:after {
+	clear: both;
+}
+/*--------------------------------------------------------------Containers-*/
+
+/*-Grid Overrides----------------------------------------------------------*/
+// .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
+.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	&.centered {
+		float: none;
+		margin: auto;
+	}
+}
+@media #{$small-only} {
+	[class*="col-"] { padding: 0; }
+}//END media:small
+/*----------------------------------------------------------Grid Overrides-*/
+
+/*-Clearing----------------------------------------------------------------*/
+/* From Foundation:
+	// We use this to do clear floats
+	@mixin clearfix {
+	  &:before, &:after { content: " "; display: table; }
+	  &:after { clear: both; }
+	}
+	.clearfix { @include clearfix; }
+*/
+.clearfix { clear: both; }
+/*----------------------------------------------------------------Clearing-*/
+

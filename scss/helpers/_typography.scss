@@ -1,0 +1,226 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * typography.scss
+ * =========================================================================
+ *
+ * Table of Contents
+ * -----------------
+ *
+ * + Import Font Libraries
+ * + General Page
+ * - Headings
+ * - Other Tags
+ * + Lists
+ * + Icons
+ * + Line Clamping
+ *
+ * Read More: http://clarknikdelpowell.com/blog/the-mathematical-advantage-of-a-16px-base-font-size/
+ * 
+ * @TODO: Update TOC as necessary.
+ *		 - Update the "Headings" colors
+ *
+ * @BUG:
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/*-Import Font Libraries---------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Cabin:500,500i,700|Lobster');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Roboto+Slab:100,300,400,700|Open+Sans:300,400,600,700,800');
+// @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/*---------------------------------------------------Import Font Libraries-*/
+
+/*-General Page------------------------------------------------------------*/
+// $roboto: 'Roboto', Helvetica Neue, Arial Narrow, Helvetica, Arial, sans-serif;
+// $roboto-slab: 'Roboto Slab', Arial Black, Georgia, slab-serif;
+// $open-sans: 'Open Sans', Helvetica, Arial, sans-serif;
+
+$headings: 'Lobster', cursive;
+$body: 'Cabin', sans-serif;
+
+body {
+	font-family: $body;
+	font-size: rem-calc(16px);
+	line-height: rem-calc(24px);
+/*	The base font-size is 16px;
+
+	Here is a handy px/em chart:
+	10		12		14		16		18		20		22		24
+	.625	.75		.875	1em		1.125	1.25	1.375	1.5
+
+	The quick math:
+		every 4px, add .25 (20 = 1.25, 24 = 1.5, 28 = 1.75, etc.).
+		for 2px, add .125 (18 = 1.125, 22 = 1.375, etc.).
+
+// REM CALC Function
+	Foundation has a built in function called "REM CALC"
+	That allows you to optionally calculate on a different base value to counter compounding effect of rem's.
+
+	Call with 1, 2, 3 or 4 parameters, 'px' is not required but supported:
+	  rem-calc(10 20 30px 40);
+
+	Space delimited, if you want to delimit using comma's, wrap it in another pair of brackets
+	  rem-calc((10, 20, 30, 40px));
+
+	Optionally call with a different base (eg: 8px) to calculate rem.
+	  rem-calc(16px 32px 48px, 8px);
+
+	If you require to comma separate your list
+	  rem-calc((16px, 32px, 48), 8px);
+*/
+
+	-webkit-animation-delay: 0.1s;
+	-webkit-animation-name: fontfix;
+	-webkit-animation-duration: 0.1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+	from { opacity: 1; }
+	to   { opacity: 1; }
+}
+
+
+/* --- Headings --- */
+h1, h2 { font-weight: 300; }
+h3 { font-weight: 400; }
+h4, h5 { font-weight: 500; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headings;
+	&.gray-light { color: $gray1; }
+	&.gray-dark { color: $form-readonly; }
+	&.headline-border {
+		color: $gray3;
+		padding-top: rem-calc(5px);
+		border-top: solid 4px $gray3;
+		&.first { border-top-color: transparent; }
+		@media #{$medium-up} {
+			&.mobile { border-top-color: transparent; }
+		}
+	}
+}
+
+@media #{$small-only} { //(max:767)
+	h3 { font-size: rem-calc(24px); }
+}
+@media #{$medium-up} { //(min:768) and (max:991)
+	// h1 { font-size: rem-calc(35px); }
+	// h2 { font-size: rem-calc(30px); }
+	// h3 { font-size: rem-calc(25px); }
+}
+@media #{$large-up} { //(min:992) and (max:1199)
+	h1 {
+		font-size: rem-calc(60px);
+		// line-height: rem-calc(64px);
+	}
+	h2 {
+		font-size: rem-calc(50px);
+		// line-height: rem-calc(56px);
+}
+	h3 {
+		font-size: rem-calc(30px);
+		// line-height: rem-calc(30px);
+	}
+	h4 {
+		font-size: rem-calc(20px);
+		// line-height: rem-calc(30px);
+	}
+	h5, h6 {
+		font-size: rem-calc(18px);
+		// line-height: rem-calc(20px);
+	}
+}
+
+/*------------------------------------------------------------General Page-*/
+
+/*-General Lists-----------------------------------------------------------*/
+ol, ul {
+	font-weight: 300;
+	font-size: rem-calc(16px);
+	line-height: rem-calc(24px);
+}
+
+/* --- Unordered Lists --- */
+ul.ul {
+	// list-style-position: outside;
+	// list-style-type: square;
+	list-style: none;
+	li {
+		&:before {
+			content:'\25A0';
+			display: block;
+			position: relative;
+			max-width: rem-calc(7px);
+			max-height: rem-calc(7px);
+			left: rem-calc(-20px);
+			top: rem-calc(5px);
+			color: $blue-default;
+		}
+	}
+}
+
+/* --- Description Lists ---*/
+.description-list {
+	.description-list-item + .description-list-item {
+		border-top: solid 1px $form-placeholder-icon;
+		margin: rem-calc(10px 0);
+		padding-top: rem-calc(10px);
+	}
+	.description-list-item p { margin: rem-calc(0 0 10px); }
+}
+/*-----------------------------------------------------------General Lists-*/
+
+/*-Line Clamping-----------------------------------------------------------*/
+//Read more: http://codepen.io/siiron/pen/jfBhy/
+.line-clamp {
+	display            : block;
+	display            : -webkit-box;
+	-webkit-box-orient : vertical;
+	position           : relative;
+
+	line-height        : 1.2;
+	overflow           : hidden;
+	text-overflow      : ellipsis;
+	padding            : 0 !important;
+}
+.line-clamp:after {
+	content    : '...';
+	text-align : right;
+	bottom     : 0;
+	right      : 0;
+	width      : 25%;
+	display    : block;
+	position   : absolute;
+	height     : calc(1em * 1.2);
+	background : linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 75%);
+}
+@supports (-webkit-line-clamp: 1) {
+	.line-clamp:after { display : none !important; }
+}
+.line-clamp-1 {
+	-webkit-line-clamp : 1;
+	height             : calc(1em * 1.2 * 1);
+}
+.line-clamp-2 {
+	-webkit-line-clamp : 2;
+	height             : calc(1em * 1.2 * 2);
+}
+.line-clamp-3 {
+	-webkit-line-clamp : 3;
+	height             : calc(1em * 1.2 * 3);
+}
+.line-clamp-4 {
+	-webkit-line-clamp : 4;
+	height             : calc(1em * 1.2 * 4);
+}
+.line-clamp-5 {
+	-webkit-line-clamp : 5;
+	height             : calc(1em * 1.2 * 5);
+}
+.line-clamp-8 {
+	-webkit-line-clamp : 8;
+	height             : calc(1em * 1.2 * 8);
+}
+/*-----------------------------------------------------------Line Clamping-*/

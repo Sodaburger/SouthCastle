@@ -1,0 +1,452 @@
+@charset "UTF-8";
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * master.scss ========================================================================= Table of Contents ----------------- + Vendors and Frameworks + Helpers - Variables -- Colors and Mixins -- Typography (Fonts and Icons) + Layout + Components +  + Shame (Should always be the last item in stylesheet) Read more: - http://www.sitepoint.com/architecture-sass-project/ - https://css-tricks.com/sass-style-guide/ @TODO: Update TOC as necessary. @BUG: */
+/*-Vendors / Frameworks----------------------------------------------------*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * functions.scss ========================================================================= Table of Contents ----------------- + REM Calculator +  @TODO: Update TOC as necessary. @BUG: */
+/*-REM Calculator----------------------------------------------------------*/
+/*	New Syntax, allows to optionally calculate on a different base value to counter compounding effect of rem's. Call with 1, 2, 3 or 4 parameters, 'px' is not required but supported: rem-calc(10 20 30px 40); Space delimited, if you want to delimit using comma's, wrap it in another pair of brackets rem-calc((10, 20, 30, 40px)); Optionally call with a different base (eg: 8px) to calculate rem. rem-calc(16px 32px 48px, 8px); If you require to comma separate your list rem-calc((16px, 32px, 48), 8px); */
+/*----------------------------------------------------------REM Calculator-*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * grid.scss ========================================================================= Table of Contents ----------------- + Media Query Ranges + Breakpoints + Containers (Bootstrap) + Category Columns @TODO: Update TOC as necessary. @BUG: */
+/*-Media Query Ranges------------------------------------------------------*/
+/*------------------------------------------------------Media Query Ranges-*/
+/*-Breakpoints-------------------------------------------------------------*/
+/*-------------------------------------------------------------Breakpoints-*/
+/*-Bootstrap-Containers----------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Cabin:500,500i,700|Lobster");
+.container { padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; min-width: 18.125rem; }
+
+@media (min-width: 768px) { .container { width: 750px; } }
+
+@media (min-width: 992px) { .container { width: 970px; } }
+
+@media (min-width: 1200px) { .container { width: 1145px; } }
+
+.container-fluid { width: 100%; padding-right: 15px; padding-left: 15px; }
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse { margin-right: -15px; margin-left: -15px; }
+
+@media (min-width: 768px) { .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse { margin-right: 0; margin-left: 0; } }
+
+@media (min-width: 768px) { .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand { margin-left: -15px; } }
+
+.container:before, .container:after, .container-fluid:before, .container-fluid:after { display: table; content: " "; }
+
+.container:after, .container-fluid:after { clear: both; }
+
+/*--------------------------------------------------------------Containers-*/
+/*-Grid Overrides----------------------------------------------------------*/
+.col-md-7.centered, .col-md-8.centered, .col-md-9.centered, .col-md-10.centered, .col-md-11.centered, .col-md-12.centered { float: none; margin: auto; }
+
+@media (max-width: 767px) { [class*="col-"] { padding: 0; } }
+
+/*----------------------------------------------------------Grid Overrides-*/
+/*-Clearing----------------------------------------------------------------*/
+/* From Foundation: // We use this to do clear floats @mixin clearfix { &:before, &:after { content: " "; display: table; } &:after { clear: both; } } .clearfix { @include clearfix; } */
+.clearfix { clear: both; }
+
+/*----------------------------------------------------------------Clearing-*/
+body { min-width: 320px; }
+
+/* 
+This directory should contain all the CSS files from external libraries and frameworks.
+Putting those aside in the same folder is a good way to tell “Hey, this is not from me, not my code, not my responsibility”.
+On a side note, we could also have a "vendors-extensions/" folder where we store files overriding some tiny bits from vendors.
+This is to avoid editing the vendor files themselves, which is generally not a good idea.
+*/
+/*-Helpers-----------------------------------------------------------------*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * colors.scss ========================================================================= Table of Contents ----------------- + Variables - Form Elements - Buttons + Interpolations for Mixins @TODO: Update TOC as necessary. - Consolodate "grays" !! Name Your SASS Variables Modularly !! @BUG: */
+/*-Variables---------------------------------------------------------------*/
+/* --- Primary Color Palette --- */
+/* --- Gray Color Palette --- */
+/* --- Blue Color Palette --- */
+/* --- Gold Color Palette --- */
+/* --- Red (University) Color Palette --- */
+/* --- Green (News) Color Palette --- */
+/* --- Orange/Brown (Vendor Ratings) Color Palette --- */
+/* --- Status Colors --- */
+/*-Button Colors-----------------------------------------------------------*/
+/* --- Buttons --- */
+/*--- Button Colors ---*/
+/* --- Form Elements --- */
+/*-Background Colors-------------------------------------------------------*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * typography.scss ========================================================================= Table of Contents ----------------- + Import Font Libraries + General Page - Headings - Other Tags + Lists + Icons + Line Clamping Read More: http://clarknikdelpowell.com/blog/the-mathematical-advantage-of-a-16px-base-font-size/ @TODO: Update TOC as necessary. - Update the "Headings" colors @BUG: */
+/*-Import Font Libraries---------------------------------------------------*/
+/*---------------------------------------------------Import Font Libraries-*/
+/*-General Page------------------------------------------------------------*/
+body { font-family: "Cabin", sans-serif; font-size: 1rem; line-height: 1.5rem; /*	The base font-size is 16px; Here is a handy px/em chart: 10		12		14		16		18		20		22		24 .625	.75		.875	1em		1.125	1.25	1.375	1.5 The quick math: every 4px, add .25 (20 = 1.25, 24 = 1.5, 28 = 1.75, etc.). for 2px, add .125 (18 = 1.125, 22 = 1.375, etc.). // REM CALC Function Foundation has a built in function called "REM CALC" That allows you to optionally calculate on a different base value to counter compounding effect of rem's. Call with 1, 2, 3 or 4 parameters, 'px' is not required but supported: rem-calc(10 20 30px 40); Space delimited, if you want to delimit using comma's, wrap it in another pair of brackets rem-calc((10, 20, 30, 40px)); Optionally call with a different base (eg: 8px) to calculate rem. rem-calc(16px 32px 48px, 8px); If you require to comma separate your list rem-calc((16px, 32px, 48), 8px); */ -webkit-animation-delay: 0.1s; -webkit-animation-name: fontfix; -webkit-animation-duration: 0.1s; -webkit-animation-iteration-count: 1; -webkit-animation-timing-function: linear; }
+
+@-webkit-keyframes fontfix { from { opacity: 1; }
+  to { opacity: 1; } }
+
+/* --- Headings --- */
+h1, h2 { font-weight: 300; }
+
+h3 { font-weight: 400; }
+
+h4, h5 { font-weight: 500; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Lobster", cursive; }
+
+h1.gray-light, h2.gray-light, h3.gray-light, h4.gray-light, h5.gray-light, h6.gray-light { color: #263238; }
+
+h1.gray-dark, h2.gray-dark, h3.gray-dark, h4.gray-dark, h5.gray-dark, h6.gray-dark { color: #444444; }
+
+h1.headline-border, h2.headline-border, h3.headline-border, h4.headline-border, h5.headline-border, h6.headline-border { color: #808080; padding-top: 0.3125rem; border-top: solid 4px #808080; }
+
+h1.headline-border.first, h2.headline-border.first, h3.headline-border.first, h4.headline-border.first, h5.headline-border.first, h6.headline-border.first { border-top-color: transparent; }
+
+@media (min-width: 768px) { h1.headline-border.mobile, h2.headline-border.mobile, h3.headline-border.mobile, h4.headline-border.mobile, h5.headline-border.mobile, h6.headline-border.mobile { border-top-color: transparent; } }
+
+@media (max-width: 767px) { h3 { font-size: 1.5rem; } }
+
+@media (min-width: 992px) { h1 { font-size: 3.75rem; }
+  h2 { font-size: 3.125rem; }
+  h3 { font-size: 1.875rem; }
+  h4 { font-size: 1.25rem; }
+  h5, h6 { font-size: 1.125rem; } }
+
+/*------------------------------------------------------------General Page-*/
+/*-General Lists-----------------------------------------------------------*/
+ol, ul { font-weight: 300; font-size: 1rem; line-height: 1.5rem; }
+
+/* --- Unordered Lists --- */
+ul.ul { list-style: none; }
+
+ul.ul li:before { content: '\25A0'; display: block; position: relative; max-width: 0.4375rem; max-height: 0.4375rem; left: -1.25rem; top: 0.3125rem; color: #376caf; }
+
+/* --- Description Lists ---*/
+.description-list .description-list-item + .description-list-item { border-top: solid 1px #cccccc; margin: 0.625rem 0; padding-top: 0.625rem; }
+
+.description-list .description-list-item p { margin: 0 0 0.625rem; }
+
+/*-----------------------------------------------------------General Lists-*/
+/*-Line Clamping-----------------------------------------------------------*/
+.line-clamp { display: block; display: -webkit-box; position: relative; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; padding: 0 !important; }
+
+.line-clamp:after { content: '...'; text-align: right; bottom: 0; right: 0; width: 25%; display: block; position: absolute; height: calc(1em * 1.2); background: linear-gradient(to right, rgba(255, 255, 255, 0), white 75%); }
+
+@supports (-webkit-line-clamp: 1) { .line-clamp:after { display: none !important; } }
+
+.line-clamp-1 { -webkit-line-clamp: 1; height: calc(1em * 1.2 * 1); }
+
+.line-clamp-2 { -webkit-line-clamp: 2; height: calc(1em * 1.2 * 2); }
+
+.line-clamp-3 { -webkit-line-clamp: 3; height: calc(1em * 1.2 * 3); }
+
+.line-clamp-4 { -webkit-line-clamp: 4; height: calc(1em * 1.2 * 4); }
+
+.line-clamp-5 { -webkit-line-clamp: 5; height: calc(1em * 1.2 * 5); }
+
+.line-clamp-8 { -webkit-line-clamp: 8; height: calc(1em * 1.2 * 8); }
+
+/*-----------------------------------------------------------Line Clamping-*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * interpolations.scss ========================================================================= Read More: http://krasimirtsonev.com/blog/article/SASS-interpolation-in-a-name-of-variable-nest-variables-within-variables @TODO: Update TOC as necessary. */
+/*-Interpolations for Mixins-----------------------------------------------*/
+/*--- Button Color Mixins - Solid ---*/
+.btn-blue { background-color: #376caf; border-color: #376caf; }
+
+.btn-blue:hover { background-color: #5da5ff; border-color: #5da5ff; }
+
+.btn-blue:active, .btn-blue:focus, .btn-blue.faded:hover, .btn-blue.faded:active, .btn-blue.faded:focus { background-color: #274360; border-color: #274360; }
+
+.btn-blue.disabled, .btn-blue.disabled:hover, .btn-blue.disabled:active, .btn-blue.disabled:focus, .btn-blue.faded { color: #9fb9d9; background-color: #e9eff7; border: solid 1px #9fb9d9; }
+
+.btn-red { background-color: #ff5018; border-color: #ff5018; }
+
+.btn-red:hover { background-color: #ff7d68; border-color: #ff7d68; }
+
+.btn-red:active, .btn-red:focus, .btn-red.faded:hover, .btn-red.faded:active, .btn-red.faded:focus { background-color: #a4321f; border-color: #a4321f; }
+
+.btn-red.disabled, .btn-red.disabled:hover, .btn-red.disabled:active, .btn-red.disabled:focus, .btn-red.faded { color: #f0b7bc; background-color: #f8e9e6; border: solid 1px #f0b7bc; }
+
+.btn-green { background-color: #0a9e02; border-color: #0a9e02; }
+
+.btn-green:hover { background-color: #65cf6a; border-color: #65cf6a; }
+
+.btn-green:active, .btn-green:focus, .btn-green.faded:hover, .btn-green.faded:active, .btn-green.faded:focus { background-color: #2e7731; border-color: #2e7731; }
+
+.btn-green.disabled, .btn-green.disabled:hover, .btn-green.disabled:active, .btn-green.disabled:focus, .btn-green.faded { color: #74b776; background-color: #eaf6eb; border: solid 1px #74b776; }
+
+.btn-orange { background-color: #cc6500; border-color: #cc6500; }
+
+.btn-orange:hover { background-color: #fb9149; border-color: #fb9149; }
+
+.btn-orange:active, .btn-orange:focus, .btn-orange.faded:hover, .btn-orange.faded:active, .btn-orange.faded:focus { background-color: #8e4412; border-color: #8e4412; }
+
+.btn-orange.disabled, .btn-orange.disabled:hover, .btn-orange.disabled:active, .btn-orange.disabled:focus, .btn-orange.faded { color: #dfaf8f; background-color: #f9f0e9; border: solid 1px #dfaf8f; }
+
+.btn-yellow { background-color: #fddd1c; border-color: #fddd1c; }
+
+.btn-yellow:hover { background-color: #f7d283; border-color: #f7d283; }
+
+.btn-yellow:active, .btn-yellow:focus, .btn-yellow.faded:hover, .btn-yellow.faded:active, .btn-yellow.faded:focus { background-color: #d89d1f; border-color: #d89d1f; }
+
+.btn-yellow.disabled, .btn-yellow.disabled:hover, .btn-yellow.disabled:active, .btn-yellow.disabled:focus, .btn-yellow.faded { color: #e3ca94; background-color: #faf3e5; border: solid 1px #e3ca94; }
+
+/*--- Button Color Mixins - Stroked ---*/
+.btn-blue, .btn-stroked-blue { border-color: #376caf; color: #376caf; }
+
+.btn-stroked-blue:hover { background-color: #e9eff7; border-color: #5da5ff; color: #5da5ff; }
+
+.btn-stroked-blue:active, .btn-stroked-blue:focus { color: #274360; background-color: #e9eff7; border-color: #274360; }
+
+.btn-stroked-blue.disabled { background-color: #e9eff7; }
+
+.btn-red, .btn-stroked-red { border-color: #ff5018; color: #ff5018; }
+
+.btn-stroked-red:hover { background-color: #f8e9e6; border-color: #ff7d68; color: #ff7d68; }
+
+.btn-stroked-red:active, .btn-stroked-red:focus { color: #a4321f; background-color: #f8e9e6; border-color: #a4321f; }
+
+.btn-stroked-red.disabled { background-color: #f8e9e6; }
+
+.btn-green, .btn-stroked-green { border-color: #0a9e02; color: #0a9e02; }
+
+.btn-stroked-green:hover { background-color: #eaf6eb; border-color: #65cf6a; color: #65cf6a; }
+
+.btn-stroked-green:active, .btn-stroked-green:focus { color: #2e7731; background-color: #eaf6eb; border-color: #2e7731; }
+
+.btn-stroked-green.disabled { background-color: #eaf6eb; }
+
+.btn-orange, .btn-stroked-orange { border-color: #cc6500; color: #cc6500; }
+
+.btn-stroked-orange:hover { background-color: #f9f0e9; border-color: #fb9149; color: #fb9149; }
+
+.btn-stroked-orange:active, .btn-stroked-orange:focus { color: #8e4412; background-color: #f9f0e9; border-color: #8e4412; }
+
+.btn-stroked-orange.disabled { background-color: #f9f0e9; }
+
+.btn-yellow, .btn-stroked-yellow { border-color: #fddd1c; color: #d89d1f; }
+
+.btn-stroked-yellow:hover { background-color: #faf3e5; border-color: #f7d283; color: #f7d283; }
+
+.btn-stroked-yellow:active, .btn-stroked-yellow:focus { color: #d89d1f; background-color: #faf3e5; border-color: #d89d1f; }
+
+.btn-stroked-yellow.disabled { background-color: #faf3e5; }
+
+/*-----------------------------------------------Interpolations for Mixins-*/
+/*-Layout------------------------------------------------------------------*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * layout.scss ========================================================================= Table of Contents ----------------- + Layout - Navs -- Header -- Footer - Components -- Forms + Other @TODO: Update TOC as necessary. @BUG: */
+/*-Layout------------------------------------------------------------------*/
+/*--- navs ---*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * header.scss ========================================================================= Table of Contents ----------------- + Header + Top Navigation + Tooltips @TODO: Update TOC as necessary. @BUG: */
+/*-Header Navigation-------------------------------------------------------*/
+.navbar-brand img.logo { max-height: 50px; }
+
+/*--------------------------------------------------------Header Navigation*/
+/*-Menu Navigation---------------------------------------------------------*/
+/*---------------------------------------------------------Menu Navigation-*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * footer.scss ========================================================================= Table of Contents ----------------- + footer - Logo - Bottomnav + NagBar @TODO: Update TOC as necessary. @BUG: */
+/*-Footer Navigation-------------------------------------------------------*/
+/* ---Bottomnav --- */
+/*-------------------------------------------------------Footer Navigation-*/
+/*-Nagbar------------------------------------------------------------------*/
+/*-Nagbar------------------------------------------------------------------*/
+/*------------------------------------------------------------------Layout-*/
+/*-Misc--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------Misc-*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * header.scss ========================================================================= Table of Contents ----------------- + Header + Top Navigation + Tooltips @TODO: Update TOC as necessary. @BUG: */
+/*-Header Navigation-------------------------------------------------------*/
+.navbar-brand img.logo { max-height: 50px; }
+
+/*--------------------------------------------------------Header Navigation*/
+/*-Menu Navigation---------------------------------------------------------*/
+/*---------------------------------------------------------Menu Navigation-*/
+/*-Components--------------------------------------------------------------*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * buttons.scss ========================================================================= Table of Contents ----------------- + Base Styles + Sizes + Mixins - Solid + Mixins - Stroked + Facebook Button + Close Modal + Button Loader @TODO: Update TOC as necessary. !! Name Your SASS Variables Modularly !! @BUG: */
+/*-Buttons-Base Styles-----------------------------------------------------*/
+input.btn, .btn { display: inline-block; font-size: 0.875rem; font-weight: 400; text-align: center; border-radius: 0.1875rem; line-height: 24px; padding: 0.375rem 1.25rem; /* --- Buttons with SVG Icon --- */ }
+
+input.btn:focus, .btn:focus { outline: none; }
+
+input.btn.icon-left, .btn.icon-left { padding: 0.375rem 1.25rem 0.375rem 0.9375rem; }
+
+input.btn.icon-right, .btn.icon-right { padding: 0.375rem 0.9375rem 0.375rem 1.25rem; }
+
+input.btn.icon-both, .btn.icon-both { padding: 0.375rem 0.9375rem; }
+
+input.btn svg, .btn svg { width: 1.375rem; height: 1.375rem; fill: currentColor; vertical-align: middle; }
+
+@media (max-width: 767px) { input.btn svg, .btn svg { width: 0.875rem; height: 0.875rem; } }
+
+input.btn.btn-sm svg, .btn.btn-sm svg { width: 1.125rem; height: 1.125rem; }
+
+input.btn.rounded, .btn.rounded { border-radius: 500px; }
+
+div.btn { display: inline-block; }
+
+a.btn { text-decoration: none; margin-top: 0.3125rem; }
+
+input.btn { outline: none; border: none; }
+
+/*-Buttons-Sizes-----------------------------------------------------------*/
+.btn.btn-mini { font-size: 0.5625rem; line-height: 0.875rem; padding: 0.0625rem 0.875rem; }
+
+.btn.btn-mini.icon-left { padding: 0.0625rem 0.25rem 0.0625rem 0.5625rem; }
+
+.btn.btn-mini.icon-right { padding: 0.0625rem 0.5625rem 0.0625rem 0.25rem; }
+
+.btn.btn-midi { font-size: 0.75rem; line-height: 1.125rem; padding: 0.3125rem 1.1875rem; }
+
+.btn.btn-midi.icon-left { padding: 0.3125rem 0.9375rem 0.3125rem 0.625rem; }
+
+.btn.btn-midi.icon-right { padding: 0.3125rem 0.625rem 0.3125rem 0.9375rem; }
+
+.btn.btn-sm { font-size: 0.6875rem; line-height: 1.25rem; padding: 0.1875rem 1rem; }
+
+.btn.btn-sm.icon-left { padding: 0.1875rem 1rem 0.1875rem 0.6875rem; }
+
+.btn.btn-sm.icon-right { padding: 0.1875rem 0.6875rem 0.1875rem 1rem; }
+
+.btn.btn-sm.icon-both { padding: 0.1875rem 0.6875rem; }
+
+.btn.btn-lg { font-size: 1.25rem; line-height: 1.5rem; padding: 0.625rem 1.625rem; }
+
+.btn.btn-lg.icon-left { padding: 0.625rem 1.625rem 0.625rem 1.3125rem; }
+
+.btn.btn-lg.icon-right { padding: 0.625rem 1.3125rem 0.625rem 1.625rem; }
+
+.btn.btn-lg.icon-both { padding: 0.625rem 1.3125rem; }
+
+.btn.btn-xl { font-size: 1.5rem; line-height: 1.5rem; padding: 0.75rem 1.75rem; }
+
+.btn.btn-xl.icon-left { padding: 0.75rem 1.75rem 0.75rem 1.4375rem; }
+
+.btn.btn-xl.icon-right { padding: 0.75rem 1.4375rem 0.75rem 1.75rem; }
+
+.btn.btn-xl.icon-both { padding: 0.75rem 1.4375rem; }
+
+.input-group-btn button.btn { line-height: 0.875rem; }
+
+.btn-prev, .btn-next { min-width: 6.25rem; max-height: 2.5rem; max-height: 2.5rem; }
+
+/*-Buttons-Mixins-Solid----------------------------------------------------*/
+/*--- Button Color Mixins - Solid ---*/
+.btn-blue { border-style: solid; border-width: 1px; color: white; }
+
+.btn-blue:hover { color: white; }
+
+.btn-blue:active, .btn-blue:focus { color: white; }
+
+.btn-blue.disabled { color: #cccccc; border-color: #cccccc; cursor: not-allowed; }
+
+.btn-blue.disabled:hover, .btn-blue.disabled:active, .btn-blue.disabled:focus { color: #cccccc; border-color: #cccccc; }
+
+.btn-blue.faded:hover, .btn-blue.faded:active, .btn-blue.faded:focus { border-color: transparent; }
+
+.btn-red { border-style: solid; border-width: 1px; color: white; }
+
+.btn-red:hover { color: white; }
+
+.btn-red:active, .btn-red:focus { color: white; }
+
+.btn-red.disabled { color: #cccccc; border-color: #cccccc; cursor: not-allowed; }
+
+.btn-red.disabled:hover, .btn-red.disabled:active, .btn-red.disabled:focus { color: #cccccc; border-color: #cccccc; }
+
+.btn-red.faded:hover, .btn-red.faded:active, .btn-red.faded:focus { border-color: transparent; }
+
+.btn-green { border-style: solid; border-width: 1px; color: white; }
+
+.btn-green:hover { color: white; }
+
+.btn-green:active, .btn-green:focus { color: white; }
+
+.btn-green.disabled { color: #cccccc; border-color: #cccccc; cursor: not-allowed; }
+
+.btn-green.disabled:hover, .btn-green.disabled:active, .btn-green.disabled:focus { color: #cccccc; border-color: #cccccc; }
+
+.btn-green.faded:hover, .btn-green.faded:active, .btn-green.faded:focus { border-color: transparent; }
+
+.btn-orange { border-style: solid; border-width: 1px; color: white; }
+
+.btn-orange:hover { color: white; }
+
+.btn-orange:active, .btn-orange:focus { color: white; }
+
+.btn-orange.disabled { color: #cccccc; border-color: #cccccc; cursor: not-allowed; }
+
+.btn-orange.disabled:hover, .btn-orange.disabled:active, .btn-orange.disabled:focus { color: #cccccc; border-color: #cccccc; }
+
+.btn-orange.faded:hover, .btn-orange.faded:active, .btn-orange.faded:focus { border-color: transparent; }
+
+.btn-yellow { border-style: solid; border-width: 1px; color: white; }
+
+.btn-yellow:hover { color: white; }
+
+.btn-yellow:active, .btn-yellow:focus { color: white; }
+
+.btn-yellow.disabled { color: #cccccc; border-color: #cccccc; cursor: not-allowed; }
+
+.btn-yellow.disabled:hover, .btn-yellow.disabled:active, .btn-yellow.disabled:focus { color: #cccccc; border-color: #cccccc; }
+
+.btn-yellow.faded:hover, .btn-yellow.faded:active, .btn-yellow.faded:focus { border-color: transparent; }
+
+/*----------------------------------------------------Buttons-Mixins-Solid-*/
+/*-Buttons-Mixins-Stroked--------------------------------------------------*/
+/*--- Button Color Mixins - Stroked ---*/
+.btn-stroked-blue { background-color: white; border-style: solid; border-width: 1px; }
+
+.btn-stroked-blue.disabled { color: #cccccc; border-color: #cccccc; cursor: not-allowed; }
+
+.btn-stroked-red { background-color: white; border-style: solid; border-width: 1px; }
+
+.btn-stroked-red.disabled { color: #cccccc; border-color: #cccccc; cursor: not-allowed; }
+
+.btn-stroked-green { background-color: white; border-style: solid; border-width: 1px; }
+
+.btn-stroked-green.disabled { color: #cccccc; border-color: #cccccc; cursor: not-allowed; }
+
+.btn-stroked-orange { background-color: white; border-style: solid; border-width: 1px; }
+
+.btn-stroked-orange.disabled { color: #cccccc; border-color: #cccccc; cursor: not-allowed; }
+
+.btn-stroked-yellow { background-color: white; border-style: solid; border-width: 1px; }
+
+.btn-stroked-yellow.disabled { color: #cccccc; border-color: #cccccc; cursor: not-allowed; }
+
+/*--- Ghost Button ---*/
+.btn-ghost { color: #fff; background-color: transparent; border: solid 1px #fff; }
+
+.btn-ghost:active, .btn-ghost:hover { color: #376caf; border-color: #fff; background-color: #fff; }
+
+/*--------------------------------------------------Buttons-Mixins-Stroked-*/
+/*-Button Loader-----------------------------------------------------------*/
+.btn-loader:not(.disabled):before { content: ''; position: absolute; right: 24px; top: 50%; margin-top: -8px; width: 16px; height: 16px; border: 2px solid; border-left-color: transparent; border-radius: 50%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; transition-duration: 0.25s; transition-property: opacity; -webkit-animation-duration: 0.75s; animation-duration: 0.75s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-name: rotate; animation-name: rotate; -webkit-animation-timing-function: linear; animation-timing-function: linear; }
+
+.btn-loader:not(.disabled):after { content: ''; display: inline-block; height: 100%; width: 0px; transition-delay: 0.25s; transition-duration: 0.75s; transition-property: width; }
+
+.btn-loader:not(.disabled).sending { pointer-events: none; cursor: not-allowed; }
+
+.btn-loader:not(.disabled).sending:not(.expand) { text-align: left; }
+
+.btn-loader:not(.disabled).sending:before { transition-delay: 0.25s; transition-duration: 1s; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
+
+.btn-loader:not(.disabled).sending:after { transition-delay: 0s; width: 30px; }
+
+@-webkit-keyframes rotate { 0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rotate { 0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*-----------------------------------------------------------Button Loader-*/
+/*-For Shame---------------------------------------------------------------*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * shame.scss ========================================================================= because hacks happen. be very specific about what each piece of code is doing,  and how to better fix it later ========================================================================= The Rules ----------------- + If it's a hack, it goes in _shame.scss + Document all hacks *fully* - What part of the codebase does it relate to? - Why was this needed? - How does this fix it? - How might you fix it properly, given more time? + Do not blame the developer; if they explained why they had to do it then their reasons are probably (hopefully) valid. + We will routinely clean shame.scss up from time to time. Read more: http://csswizardry.com/2013/04/shame-css/ @TODO: Update RULES as necessary. @BUG: */
+/*-Quick Fix Example-------------------------------------------------------*/
+/* Nav specificity fix. Someone used an ID in the header code (`#header a {}`) which trumps the nav selectors (`.site-nav a {}`). Use !important to override it until I have time to re-factor the header stuff. */
+/*-Quick Fix 1-------------------------------------------------------------*/
+/*-Quick Fix 2-------------------------------------------------------------*/
+/*-Quick Fix 3-------------------------------------------------------------*/
+/*-Quick Fix 4-------------------------------------------------------------*/
+/*-Quick Fix 5-------------------------------------------------------------*/
+/*-Quick Fix 6-------------------------------------------------------------*/
+/*-Quick Fix 7-------------------------------------------------------------*/
+/*-Quick Fix 8-------------------------------------------------------------*/

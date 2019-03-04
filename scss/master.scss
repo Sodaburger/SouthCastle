@@ -1,0 +1,66 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * master.scss
+ * =========================================================================
+ *
+ * Table of Contents
+ * -----------------
+ *
+ * + Vendors and Frameworks
+ * + Helpers
+ *	 - Variables
+ *		-- Colors and Mixins
+ * 		-- Typography (Fonts and Icons)
+ * + Layout
+ * + Components
+ * + 
+ * + Shame (Should always be the last item in stylesheet)
+ *
+ * Read more:
+ * - http://www.sitepoint.com/architecture-sass-project/
+ * - https://css-tricks.com/sass-style-guide/
+ *
+ * @TODO: Update TOC as necessary.
+ *
+ * @BUG:
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/*-Vendors / Frameworks----------------------------------------------------*/
+@import "helpers/functions.scss";				// Custom SASS Functions
+@import "layout/grid.scss";						// Grid system
+body { min-width: 320px; }
+/* 
+This directory should contain all the CSS files from external libraries and frameworks.
+Putting those aside in the same folder is a good way to tell “Hey, this is not from me, not my code, not my responsibility”.
+On a side note, we could also have a "vendors-extensions/" folder where we store files overriding some tiny bits from vendors.
+This is to avoid editing the vendor files themselves, which is generally not a good idea.
+*/
+
+/*-Helpers-----------------------------------------------------------------*/
+//This folder gathers all Sass tools and helpers we’ll use across the project (like functions and mixins)
+@import "helpers/colors.scss";					// Sass Variables - colors
+@import "helpers/typography.scss";				// Sass Variables - typography
+@import "helpers/interpolations.scss";			// Sass Variables - interpolations
+// @import "helpers/mixins.scss";					// Sass Variables - Mixins
+
+/*-Layout------------------------------------------------------------------*/
+//This is a "macro" directory (defining the global wireframe). It contains a number of files for the main sections of the layout
+@import "layout/layout.scss";
+@import "layout/header.scss";						// Header styles
+
+/*-Components--------------------------------------------------------------*/
+//This is a "micro" directory (for smaller components). It can contain all kinds of specific modules
+//There will be a lot of files in components/ since our site should be mostly composed of tiny modules.
+
+@import "components/buttons.scss";				// Buttons
+// @import "components/alerts.scss";				// Alerts
+// @import "components/carousel.scss";				// Carousel
+// @import "/components/forms.scss";				// Forms
+// @import "components/tables.scss";				// Lists
+// @import "components/modals.scss";				// Modals
+
+/*-For Shame---------------------------------------------------------------*/
+// If you need to make a quick fix, you can do it here:
+@import 'shame';

@@ -1,0 +1,151 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * checkboxes.scss
+ * =========================================================================
+ * 
+ * @NOTE: Please DON'T convert these background-image positions to rems!
+ *		- "p:not(#ie*)" is a way to style everything in modern browsers
+ *
+ * @TODO: Update TOC as necessary.
+ *      - Update image-sprite
+ * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+//overwriting foundation defaults - required for custom inputs
+input[type="checkbox"] { margin: 0 0 0 0; }
+
+// Hide the input, but have it still be clickable
+p:not(#ie8) > input[type=checkbox] {
+	opacity: 0;
+
+	float: left;
+	width: rem-calc(22px);
+	height: rem-calc(22px);
+}
+/*-Vertical----------------------------------------------------------------*/
+p:not(#ie8) > input[type=checkbox] + label {
+	margin: 0;
+	clear: none;
+
+	// Left padding makes room for the images
+	padding: rem-calc(0 0 0 30px);
+	// covering existing button
+	margin-left: rem-calc(-25px);
+
+	// adding breathing room between lines
+	margin-bottom: rem-calc(5px);
+
+	// Make look clickable because they are
+	cursor: pointer;
+	background: url('../images/components/ds_custom-checkboxes.png') 0 -25px no-repeat;
+}
+// Changed to checked graphic
+p:not(#ie8) > input[type=checkbox]:checked + label {
+	background-position: 0 0px;
+}
+// Changed to disabled graphic
+p:not(#ie8) > input[type=checkbox]:disabled + label,
+p:not(#ie8) > input[type=checkbox]:hover:disabled + label,
+p:not(#ie8) > input[type=checkbox]:focus:disabled + label,
+p:not(#ie8) > input[type=checkbox]:disabled + label:hover,
+p:not(#ie8) > input[type=checkbox]:disabled + label:hover:active { 
+	background-position: 0 -75px; 
+}
+// Changed to disabled/checked graphic
+p:not(#ie8) > input[type=checkbox]:disabled:checked + label,
+p:not(#ie8) > input[type=checkbox]:hover:disabled:checked + label,
+p:not(#ie8) > input[type=checkbox]:focus:disabled:checked + label,
+p:not(#ie8) > input[type=checkbox]:disabled:checked + label:hover,
+p:not(#ie8) > input[type=checkbox]:disabled:checked + label:hover:active {
+	 background-position: 0 -50px; 
+}
+// Changed to indeterminate graphic
+p:not(#ie8) > input[type=checkbox].indeterminate + label,
+p:not(#ie8) > input[type=checkbox]:hover.indeterminate + label,
+p:not(#ie8) > input[type=checkbox]:focus.indeterminate + label,
+p:not(#ie8) > input[type=checkbox].indeterminate + label:hover,
+p:not(#ie8) > input[type=checkbox].indeterminate + label:hover:active,
+p:not(#ie8) > input[type=checkbox]:indeterminate + label,
+p:not(#ie8) > input[type=checkbox]:hover:indeterminate + label,
+p:not(#ie8) > input[type=checkbox]:focus:indeterminate + label,
+p:not(#ie8) > input[type=checkbox]:indeterminate + label:hover,
+p:not(#ie8) > input[type=checkbox]:indeterminate + label:hover:active {
+	 background-position: 0 -100px; 
+}
+
+/*
+// Changed to hover graphic
+p:not(#ie8) > input[type=checkbox]:hover + label,
+p:not(#ie8) > input[type=checkbox]:focus + label,
+p:not(#ie8) > input[type=checkbox] + label:hover { 
+	background-position: 0 -19px; 
+}
+// Changed to hover/checked graphic
+p:not(#ie8) > input[type=checkbox]:hover:checked + label,
+p:not(#ie8) > input[type=checkbox]:focus:checked + label,
+p:not(#ie8) > input[type=checkbox]:checked + label:hover  { 
+	background-position: 0 -99px;
+}
+// Changed to active graphic
+p:not(#ie8) > input[type=checkbox]:active + label,
+p:not(#ie8) > input[type=checkbox] + label:hover:active { 
+	background-position: 0 -39px; 
+}
+// Changed to active/checked graphic
+p:not(#ie8) > input[type=checkbox]:active:checked + label,
+p:not(#ie8) > input[type=checkbox]:checked + label:hover:active {
+	 background-position: 0 -119px; 
+}
+*/
+/*----------------------------------------------------------------Vertical-*/
+
+/*-Horizontal--------------------------------------------------------------*/
+p:not(#ie8).horizontal-checkboxes {
+	> input[type=checkbox] + label {
+		padding: rem-calc(0 0 0 24px);
+		background: url('../images/components/ds_custom-checkboxes_h.png') -25px 0 no-repeat;
+		span {
+			background-color: #fff;
+			display: inline-block;
+		}
+	}
+
+	// Changed to checked graphic
+	> input[type=checkbox]:checked + label { background-position: 0 0px; }
+
+	// Changed to disabled graphic
+	> input[type=checkbox]:disabled + label,
+	> input[type=checkbox]:hover:disabled + label,
+	> input[type=checkbox]:focus:disabled + label,
+	> input[type=checkbox]:disabled + label:hover,
+	> input[type=checkbox]:disabled + label:hover:active { 
+		background-position: 0 -75px; 
+	}
+
+	// Changed to disabled/checked graphic
+	> input[type=checkbox]:disabled:checked + label,
+	> input[type=checkbox]:hover:disabled:checked + label,
+	> input[type=checkbox]:focus:disabled:checked + label,
+	> input[type=checkbox]:disabled:checked + label:hover,
+	> input[type=checkbox]:disabled:checked + label:hover:active {
+		 background-position: 0 -50px; 
+	}
+
+	// Changed to indeterminate graphic
+	> input[type=checkbox].indeterminate + label,
+	> input[type=checkbox]:hover.indeterminate + label,
+	> input[type=checkbox]:focus.indeterminate + label,
+	> input[type=checkbox].indeterminate + label:hover,
+	> input[type=checkbox].indeterminate + label:hover:active {
+		 background-position: 0 -100px; 
+	}
+}
+p:not(#ie8).horizontal-wrap {
+	display: inline-block;
+	padding: 0 8px 0 0;
+	margin:0;
+	> input[type=checkbox] + label {
+		padding: rem-calc(0 0 0 22px);
+	}
+}
+/*--------------------------------------------------------------Horizontal-*/
