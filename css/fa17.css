@@ -294,11 +294,17 @@ a { color: #c0392b; }
 
 .body-blog .module-categories .list-grid { top: -7px; }
 
+.body-blog small.contractor { display: block; margin: -10px auto 10px; }
+
+.body-blog .location { position: relative; margin-top: 15px; float: right; opacity: 0.5; }
+
 .wrapper-pagination .nav-pills { float: right; }
 
 .wrapper-pagination .nav-pills > li > a:hover, .wrapper-pagination .nav-pills > li > a:focus { background-color: #c0392b; color: #fff; }
 
 .wrapper-pagination .nav-pills > li.active > a { background-color: #c0392b; color: #fff; }
+
+.nah { opacity: 0.5; }
 
 /*---------------------------------------------------------------Blog-Page-*/
 /*-Footer------------------------------------------------------------------*/

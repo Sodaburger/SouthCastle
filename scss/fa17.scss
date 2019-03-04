@@ -198,9 +198,36 @@ $cinzel: 'Cinzel Decorative', cursive;
 
 /*-Blog-Page---------------------------------------------------------------*/
 .body-blog {
-	.navbar {}
 	.navbar-nav > .uptop { display: none; }
+	.module-categories .list-grid { top: -7px; }
+
+	small.contractor {
+		display: block;
+		margin: -10px auto 10px;
+	}
+	.location {
+		position: relative;
+		margin-top: 15px;
+		float: right;
+		opacity: 0.5;
+	}
+
+}//END .blog-body
+
+.wrapper-pagination .nav-pills {
+	float: right;
+	&>li > a {
+		&:hover, &:focus {
+			background-color: $main;
+			color: $white;
+		}
+	}
+	&>li.active > a {
+		background-color: $main;
+		color: $white;
+	}
 }
+.nah { opacity: 0.5; }
 /*---------------------------------------------------------------Blog-Page-*/
 
 /*-Footer------------------------------------------------------------------*/

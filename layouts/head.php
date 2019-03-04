@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="distribution" content="global">
 	<meta name="robots" content="follow, all">
 	<meta name="language" content="en">
@@ -40,24 +40,26 @@
 	<link rel="stylesheet" href="theme/css/vendor/slick.min.css" />
 	<link rel="stylesheet" href="theme/css/vendor/slick-theme.min.css" />
 	<link rel="stylesheet" href="theme/css/vendor/blueimp-gallery.min.css" />
+
 	<!-- Theme CSS -->
 	<link rel="stylesheet" href="theme/css/main.min.css" />
 	<link rel="stylesheet" href="theme/css/style.min.css" />
-	<link rel="stylesheet" href="theme/css/animation.min.css" />
-	<link rel="stylesheet" href="theme/css/responsive.min.css" />
-	<link rel="stylesheet" href="theme/css/typography.min.css" />
-	<!-- Theme Color -->
-	<link rel="stylesheet" href="theme/css/colors/light.min.css" />
-	<!--<link rel="stylesheet" href="theme/css/colors/pomegranate.min.css" />-->
-	<!-- Custom CSS -->
-	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-	<link rel="dns-prefetch" href="//ssl.google-analytics.com" />
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cinzel+Decorative|Cabin:400,400i,600" />
 <?php if (isset($bodyClass) && ($bodyClass == "body-blog blog-category")): ?>
 	<link rel="stylesheet" href="theme/css/blog.min.css" />
 <?php else: ?>
 	<!-- nothing -->
 <?php endif ?>
+	<link rel="stylesheet" href="theme/css/animation.min.css" />
+	<link rel="stylesheet" href="theme/css/responsive.min.css" />
+	<link rel="stylesheet" href="theme/css/typography.min.css" />
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cinzel+Decorative|Cabin:400,400i,600" />
+	<!-- Theme Color -->
+	<link rel="stylesheet" href="theme/css/colors/light.min.css" />
+	<!--<link rel="stylesheet" href="theme/css/colors/pomegranate.min.css" />-->
+
+	<!-- Custom CSS -->
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+	<link rel="dns-prefetch" href="//ssl.google-analytics.com" />
 	<!--<link rel="stylesheet" type="text/css" href="css/master.css" />-->
 	<link rel="stylesheet" type="text/css" href="css/fa17.css" />
 

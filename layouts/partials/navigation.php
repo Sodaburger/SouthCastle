@@ -20,16 +20,16 @@
 		<div class="collapse navbar-collapse" id="navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li class="nav-home" data-toggle="collapse" data-target="#navbar-collapse-1">
-					<a href="#top">Home</a>
+					<a href="/#top">Home</a>
 				</li>
 				<li class="nav-work" data-toggle="collapse" data-target="#navbar-collapse-1">
-					<a href="#projects">Work</a>
+					<a href="/#projects">Work</a>
 				</li><!--
 				<li data-toggle="collapse" data-target="#navbar-collapse-1">
 					<a href="#work">Logos</a>
 				</li>-->
 				<li class="nav-resume" data-toggle="collapse" data-target="#navbar-collapse-1">
-					<a href="#resume">Resume</a>
+					<a href="/#resume">Resume</a>
 				</li><!--
 				<li data-toggle="collapse" data-target="#navbar-collapse-1">
 					<a href="#features">Features</a>
@@ -62,7 +62,7 @@
 					<a href="#team">Team</a>
 				</li>-->
 				<li data-toggle="collapse" data-target="#navbar-collapse-1">
-					<a href="#contact">Contact</a>
+					<a href="/#contact">Contact</a>
 				</li>
 				<li class="uptop" data-toggle="collapse" data-target="#navbar-collapse-1">
 					<a href="#top"><span class="fa fa-chevron-up"></span></a>
