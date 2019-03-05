@@ -15,8 +15,8 @@
 			<div class="c1 col-md-12">
 				<!-- Download Buttons -->
 				<div class="download-buttons animateblock ltr-2 speed-1">
-					<a class="btn btn-lg btn-danger" href="#" target="_blank"><span class="fa fa-download"></span>Download</a>
-					<a class="btn btn-lg btn-danger" href="resume.php" target="_blank"><span class="fa fa-eye"></span>View Online</a>
+					<?php include 'views/widgets/btn_download_resume.php'; ?>
+					<a class="btn btn-lg" href="resume.php">View Online</a>
 				</div>
 <?php /*
 				<!-- Mailchimp Newsletter -->

@@ -4,7 +4,7 @@
 ?>
 	<!-- HEADER -->
 	<header><?php
-		include 'layouts/partials/navigation.php';
+		include 'layouts/partials/nav2.php';
 	?></header>
 	<!-- END HEADER -->
 
@@ -449,7 +449,7 @@
 		</section>
 		<!-- Section: SKILLS -->
 
-		<!-- Section: Education -->
+		<!-- Section: EDUCATION -->
 		<section class="module module-Education">
 			<div class="container-fluid wrapper-module">
 				<!-- Section Header -->
@@ -480,7 +480,24 @@
 				<!-- End Section Content -->
 			</div>
 		</section>
-		<!-- Section: SKILLS -->
+		<!-- Section: EDUCATION -->
+
+		<!-- Section: DOWNLOADD -->
+		<section class="module module-Education">
+			<div class="container-fluid wrapper-module">
+				<!-- Section Content -->
+				<div class="r1 row wrapper-module-content">
+					<div class="c1 col-xs-12 text-pod">
+						<?php
+							$btnText = "Download R&eacute;sum&eacute;";
+							include 'views/widgets/btn_download_resume.php';
+						?>
+					</div>
+				</div>
+				<!-- End Section Content -->
+			</div>
+		</section>
+		<!-- Section: Education -->
 
 	</aside>
 	<!-- END SIDEBAR -->
