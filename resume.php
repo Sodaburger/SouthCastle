@@ -1,14 +1,18 @@
-<?php
+<?php 
 	$bodyClass = "body-blog blog-category";
 	include 'layouts/head.php';
-	include 'layouts/partials/navigation.php';
 ?>
+	<!-- HEADER -->
+	<header><?php
+		include 'layouts/partials/navigation.php';
+	?></header>
+	<!-- END HEADER -->
 
 <!-- Page Content -->
 <div class="container wrapper-content" id="resume">
 
 	<!-- MAIN -->
-	<div class="c1 col-xs-12 col-sm-9 main">
+	<div class="c1 col-xs-12 col-sm-8 main">
 
 		<!-- BLOG CONTENT -->
 		<section class="blog-content">
@@ -37,38 +41,25 @@
 						<div role="tabpanel" class="tab-pane fade in active" id="Employment">
 							<h2 class="title">Employment</h2>
 							<div class="c1 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="Adobe" />
-									</a>
-									<time class="published" datetime="2019">2018-2019</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Lehi, Utah</span>
+									<span class="time" datetime="2019">2018-2019</span>
 									<h3 class="media-heading title">
 										<a href="#">Adobe</a></h3>
 										<small class="contractor">via Ursus Inc.</small>
 									<strong class="job-title">UI Developer 1</strong>
 									<ul class="description">
-										<li>Email Blasts</li>
-										<li>Snarky Comments</li>
-									</ul>
+										<li>Produced responsive HTML email messages, keeping with established design templates for marketing and customer relationship programs</li>
+										<li>Worked within a fast-paced and dynamic working environment with short deadlines and quick turn-around expectations</li>
 								</div>
 							</div>
 
 							<div class="c2 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="DrivingSales" />
-									</a>
-									<time class="published" datetime="2017">2015-2017</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Sandy, Utah</span>
+									<span class="time" datetime="2017">2015-2017</span>
 									<h3 class="title">
 										<a href="#">DrivingSales</a></h3>
 									<strong class="job-title">Front-End Web Developer</strong>
@@ -78,22 +69,16 @@
 										<li>Updated themes/styles on, and troubleshooted issues with, WordPress microsites</li>
 										<li>Built mockups and user flow views for HCM app</li>
 										<li>Styled views for HCM app built in Ionic mobile app framework</li>
-										<li>Maintained app store presence; submitted updated app builds to both the App Store and Play Store.</li>
+										<li>Maintained app store presence; submitted updated app builds to both the App Store and Play Store</li>
 									</ul>
 								</div>
 							</div>
 
 							<div class="c3 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="ZAGG" />
-									</a>
-									<time class="published" datetime="2015">2012-2015</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
+									<span class="time" datetime="2015">2012-2015</span>
 									<h3 class="media-heading title">
 										<a href="blog-detail.html">ZAGG</a></h3>
 									<strong class="job-title">Front-End Web Developer</strong>
@@ -109,16 +94,10 @@
 							</div>
 
 							<div class="c4 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="AmEx" />
-									</a>
-									<time class="published" datetime="2012">2010-2012</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
+									<span class="time" datetime="2012">2010-2012</span>
 									<h3 class="media-heading title">
 										<a href="blog-detail.html">American Express</a></h3>
 										<small class="contractor">via Insight Global &amp; ConsultNet</small>
@@ -132,16 +111,10 @@
 							</div>
 
 							<div class="c5 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="Sports Imaging" />
-									</a>
-									<time class="published" datetime="2010">2003-2005, 2008-2010</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Murray, Utah</span>
+									<span class="time" datetime="2010">2003-2005, 2008-2010</span>
 									<h3 class="media-heading title">
 										<a href="blog-detail.html">Sports Imaging Photography</a></h3>
 									<strong class="job-title">Graphic/Web Designer</strong>
@@ -149,7 +122,7 @@
 										<li>Created custom border/background for client photographs, utilizing Photoshop, Illustrator</li>
 										<li>Redesigned company website which increased SEO by 49%, including an online shopping cart which increased sales by 27%, utilizing PHP, JavaScript</li>
 									</ul>
-									<small class="author">Photographer</small>
+									<strong class="author">Photographer</strong>
 									<ul class="description">
 										<li>Photographed customers using digital Canon Rebel, 10D, 20D, D60</li>
 										<li>Determined best customer photograph</li>
@@ -159,16 +132,10 @@
 							</div>
 
 							<div class="c6 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="OfficeMax" />
-									</a>
-									<time class="published" datetime="2008">2007-2008</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Las Vegas, Nevada</span>
+									<span class="time" datetime="2008">2007-2008</span>
 									<h3 class="media-heading title">
 										<a href="blog-detail.html">OfficeMax</a></h3>
 									<strong class="job-title">ImPress Associate</strong>
@@ -180,19 +147,13 @@
 							</div>
 
 							<div class="c8 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="Venetian" />
-									</a>
-									<time class="published" datetime="2007">2007</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Las Vegas, Nevada</span>
+									<span class="time" datetime="2007">2007</span>
 									<h3 class="media-heading title">
 										<a href="blog-detail.html">The Venetian</a></h3>
-									<strong class="job-title">Web Developer Intern</strong>
+									<strong class="job-title">Web Development Intern</strong>
 									<ul class="description">
 										<li>Programmed for the Palazzo Website</li>
 										<li>Updated content for Venetian.com</li>
@@ -202,16 +163,10 @@
 							</div>
 
 							<div class="c7 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="AiLV" />
-									</a>
-									<time class="published" datetime="2007">2005-2007</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Henderson, Nevada</span>
+									<span class="time" datetime="2007">2005-2007</span>
 									<h3 class="media-heading title">
 										<a href="blog-detail.html">The Art Institute of Las Vegas</a></h3>
 									<strong class="job-title">Assistant to the Dean of Student Affairs</strong>
@@ -230,16 +185,10 @@
 							<h2 class="title">Freelance</h2>
 
 							<div class="c1 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="Cache AirFest" />
-									</a>
-									<time class="published" datetime="2018">2018</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Logan, Utah</span>
+									<span class="time" datetime="2018">2018</span>
 									<h3 class="media-heading title">
 										<a href="#">Cache AirFest</a></h3>
 									<strong class="job-title">Graphic Designer</strong>
@@ -250,16 +199,10 @@
 							</div>
 
 							<div class="c2 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="Phoenician Plumbing" />
-									</a>
-									<time class="published" datetime="2018">2018</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
-									<span class="location">Phoenix, AZ</span>
+									<span class="location">Phoenix, Arizona</span>
+									<span class="time" datetime="2018">2018</span>
 									<h3 class="media-heading title">
 										<a href="#">Phoenician Plumbing</a></h3>
 									<strong class="job-title">Graphic Designer</strong>
@@ -270,16 +213,10 @@
 							</div>
 
 							<div class="c3 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="SLF" />
-									</a>
-									<time class="published" datetime="2016">2016</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
+									<span class="time" datetime="2016">2016</span>
 									<h3 class="media-heading title">
 										<a href="#">Salt Lake Fertilizing</a></h3>
 									<strong class="job-title">Graphic/Web Designer</strong>
@@ -291,16 +228,10 @@
 							</div>
 
 							<div class="c4 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="Sego Lily CAD" />
-									</a>
-									<time class="published" datetime="2011">2014</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
+									<span class="time" datetime="2011">2014</span>
 									<h3 class="media-heading title">
 										<a href="blog-detail.html">Sego Lily Center for the Abused Deaf</a></h3>
 									<strong class="job-title">Graphic Designer</strong>
@@ -312,16 +243,10 @@
 							</div>
 
 							<div class="c5 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="FFE" />
-									</a>
-									<time class="published" datetime="2012">2011-2012</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">North Salt Lake, Utah</span>
+									<span class="time" datetime="2012">2011-2012</span>
 									<h3 class="title">
 										<a href="#">Frozen Flavor Emporium</a></h3>
 									<strong class="job-title">Graphic/Web Designer</strong>
@@ -334,16 +259,10 @@
 							</div>
 
 							<div class="c6 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="PCH" />
-									</a>
-									<time class="published" datetime="2011">2010-2011</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
+									<span class="time" datetime="2011">2010-2011</span>
 									<h3 class="media-heading title">
 										<a href="blog-detail.html">Pioneer Craft House</a></h3>
 									<strong class="job-title">Graphic/Web Designer</strong>
@@ -361,16 +280,10 @@
 						<div role="tabpanel" class="tab-pane fade" id="Experience">
 							<h2 class="title">Experience</h2>
 							<div class="c1 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="Cashman Photo" />
-									</a>
-									<time class="published" datetime="2008">2008</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Las Vegas, Nevada</span>
+									<span class="time" datetime="2008">2008</span>
 									<h3 class="media-heading title">
 										<a href="#">Cashman Photo Enterprises</a></h3>
 									<strong class="job-title">Graphic Design</strong>
@@ -381,16 +294,10 @@
 							</div>
 
 							<div class="c2 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="Espee's" />
-									</a>
-									<time class="published" datetime="2008">2008</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Las Vegas, Nevada</span>
+									<span class="time" datetime="2008">2008</span>
 									<h3 class="title"><a href="#">Espee&rsquo;s Gourmet Tamales</a></h3>
 									<strong class="job-title">Graphic Design</strong>
 									<ul class="description">
@@ -400,16 +307,10 @@
 							</div>
 
 							<div class="c3 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="Venetian" />
-									</a>
-									<time class="published" datetime="2007">2007</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Las Vegas, Nevada</span>
+									<span class="time" datetime="2007">2007</span>
 									<h3 class="media-heading title">
 										<a href="blog-detail.html">The Venetian</a></h3>
 									<strong class="job-title">Web Design</strong>
@@ -422,16 +323,10 @@
 							</div>
 
 							<div class="c4 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="LV1" />
-									</a>
-									<time class="published" datetime="2007">2007</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Las Vegas, Nevada</span>
+									<span class="time" datetime="2007">2007</span>
 									<h3 class="media-heading title"><a href="blog-detail.html">Las Vegas 1</a></h3>
 									<strong class="job-title">Web Design</strong>
 									<ul class="description">
@@ -442,16 +337,10 @@
 							</div>
 
 							<div class="c5 col-xs-12 media wrapper-post">
-								<!-- Thumbnail -->
-								<div class="media-left thumb-overlay">
-									<a class="link-thumb" href="blog-detail.html">
-										<img class="thumb" src="https://via.placeholder.com/245x180" alt="Siena YSA" />
-									</a>
-									<time class="published" datetime="2007">2005-2007</time>
-								</div>
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Henderson, Nevada</span>
+									<span class="time" datetime="2007">2005-2007</span>
 									<h3 class="media-heading title">
 										<a href="blog-detail.html">Siena YSA Ward</a></h3>
 									<strong class="job-title">Publicity Chair</strong>
@@ -505,7 +394,7 @@
 	<!-- END MAIN -->
 
 	<!-- SIDEBAR -->
-	<aside class="c2 col-xs-12 col-sm-3 sidebar">
+	<aside class="c2 col-xs-12 col-sm-4 sidebar">
 
 		<!-- Section: OBJECTIVE -->
 		<section class="module module-objective">
@@ -517,7 +406,7 @@
 				<!-- End Section Header -->
 				<!-- Section Content -->
 				<div class="r1 row wrapper-module-content">
-					<div class="c1 col-xs-12">
+					<div class="c1 col-xs-12 text-pod">
 						Experienced Frontend Web Developer with a demonstrated history of working in the industry. Always strives to create and maintain clean and efficient code. Skilled in Responsive Design, User Experience, Advertising, eCommerce, and WordPress. Outgoing, collaborative team player that enjoys working in an agile environment. Puts team mission above all.  Actively serves as a sounding board for others and presents solutions when needed.
 
 					</div>
@@ -570,10 +459,9 @@
 				<!-- End Section Header -->
 				<!-- Section Content -->
 				<div class="r1 row wrapper-module-content">
-					<div class="c1 col-xs-12">Salt Lake Community College</div>
+					<div class="c1 col-xs-12 text-pod">Salt Lake Community College <span class="time">2019</span></div>
 					<div class="c1 col-xs-12 table-responsive">
 						<ul>
-							<li>2019</li>
 							<li>Certificate: Web Design</li>
 							<li>Certificate: Web Development</li>
 						</ul>
@@ -582,10 +470,9 @@
 				<!-- End Section Content -->
 				<!-- Section Content -->
 				<div class="r1 row wrapper-module-content">
-					<div class="c1 col-xs-12">The Art Institute of Las Vegas</div>
+					<div class="c1 col-xs-12 text-pod">The Art Institute of Las Vegas <span class="time">2005-2008</span></div>
 					<div class="c1 col-xs-12 table-responsive">
 						<ul>
-							<li>2005-2008</li>
 							<li>Bachelor of Science: Interactive Media Design</li>
 						</ul>
 					</div>

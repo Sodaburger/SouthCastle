@@ -4,7 +4,8 @@
 		<div class="r1 row">
 			<div class="c1 col-md-12">
 				<div class="footer-logo">
-					<img class="logo" src="images/logos/logo_nav-scimd.png" alt="Logo" />
+					<?php include('images/logos/rook-icon.php'); ?>
+					<!--<img class="logo" src="images/logos/logo_nav-scimd.png" alt="Logo" />-->
 				</div>
 				<!-- Social Buttons -->
 				<section class="social-icons">
