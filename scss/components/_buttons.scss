@@ -1,0 +1,317 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * buttons.scss
+ * =========================================================================
+ *
+ * Table of Contents
+ * -----------------
+ *
+ * + Base Styles
+ * + Sizes
+ * + Mixins - Solid
+ * + Mixins - Stroked
+ * + Facebook Button
+ * + Close Modal
+ * + Button Loader
+ * 
+ * @TODO: Update TOC as necessary.
+ * !! Name Your SASS Variables Modularly !!
+ *
+ * @BUG:
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/*-Buttons-Base Styles-----------------------------------------------------*/
+input.btn,
+.btn {
+	display: inline-block;
+	font-size: rem-calc(14px);
+	font-weight: 400;
+	text-align: center;
+	border-radius: rem-calc(3px);
+	&:focus { outline: none; }
+//	line-height: rem-calc(14px);
+	line-height: 24px;
+//	padding: rem-calc(6px 12px);
+	padding: rem-calc(6px 20px);// height = 36px
+	&.icon-left { padding: rem-calc(6px 20px 6px 15px); }
+	&.icon-right { padding: rem-calc(6px 15px 6px 20px); }
+	&.icon-both { padding: rem-calc(6px 15px);}
+	/* --- Buttons with SVG Icon --- */
+	svg {
+		width: rem-calc(22px);
+		height: rem-calc(22px);
+		fill: currentColor;
+		vertical-align: middle;
+		@media #{$small-only} {
+			width: rem-calc(14px);
+			height: rem-calc(14px);
+		}//END media:small
+	}
+	&.btn-sm svg {
+		width: rem-calc(18px);
+		height: rem-calc(18px);
+	}
+	&.rounded { border-radius: 500px; }
+}//END .btn
+
+div.btn { display: inline-block; }
+a.btn { text-decoration: none; margin-top: rem-calc(5px); }
+input.btn {
+	outline: none;
+	border: none;
+}
+/*-Buttons-Sizes-----------------------------------------------------------*/
+.btn {
+	&.btn-mini {
+		font-size: rem-calc(9px);
+		line-height: rem-calc(14px);
+	//	padding: rem-calc(1px 5px);
+		padding: rem-calc(1px 14px);// height = 26px
+		&.icon-left { padding: rem-calc(1px 4px 1px 9px); }
+		&.icon-right { padding: rem-calc(1px 9px 1px 4px); }
+	}
+	&.btn-midi {
+		font-size: rem-calc(12px);
+		line-height: rem-calc(18px);
+	//	padding: rem-calc(5px 10px);
+		padding: rem-calc(5px 19px);// height = 34px
+		&.icon-left { padding: rem-calc(5px 15px 5px 10px); }
+		&.icon-right { padding: rem-calc(5px 10px 5px 15px); }
+	}
+	&.btn-sm {
+		font-size: rem-calc(11px);
+		line-height: rem-calc(20px);
+	//	padding: rem-calc(3px 8px);
+		padding: rem-calc(3px 16px);// height = 30px
+		&.icon-left { padding: rem-calc(3px 16px 3px 11px); }
+		&.icon-right { padding: rem-calc(3px 11px 3px 16px); }
+		&.icon-both { padding: rem-calc(3px 11px);}
+	}
+	&.btn-lg {
+		font-size: rem-calc(20px);
+		line-height: rem-calc(24px);
+	//	padding: rem-calc(10px 12px);
+		padding: rem-calc(10px 26px);// height = 46px
+		&.icon-left { padding: rem-calc(10px 26px 10px 21px); }
+		&.icon-right { padding: rem-calc(10px 21px 10px 26px); }
+		&.icon-both { padding: rem-calc(10px 21px);}
+	}
+	&.btn-xl {
+		font-size: rem-calc(24px);
+		line-height: rem-calc(24px);
+	//	padding: rem-calc(12px 16px);
+		padding: rem-calc(12px 28px);// height = 50px
+		&.icon-left { padding: rem-calc(12px 28px 12px 23px); }
+		&.icon-right { padding: rem-calc(12px 23px 12px 28px); }
+		&.icon-both { padding: rem-calc(12px 23px);}
+	}
+}//END .btn
+.input-group-btn button.btn { line-height: rem-calc(14px); }
+
+.btn-prev, .btn-next {
+	min-width: rem-calc(100px);
+	max-height: rem-calc(40px);
+	max-height: rem-calc(40px);
+}
+
+.btn-module {}
+
+/*-Buttons-Mixins-Solid----------------------------------------------------*/
+@mixin color-buttons($color) {
+	@extend %#{$color}-stroke ;
+	border-style: solid;
+	border-width: 1px;
+
+	color: white;
+	@extend %#{$color}-bg;
+	&:hover {
+		color: white;
+		@extend %#{$color}-bg-hover;
+	}
+	&:active, &:focus {
+		color: white;
+		@extend %#{$color}-bg-active;
+	}
+	&.disabled {
+		@extend %#{$color}-bg-grey;
+		color: $disabled;
+		border-color: $disabled-border;
+		cursor: not-allowed;
+		&:hover, &:active, &:focus {
+			@extend %#{$color}-bg-grey;
+			color: $disabled;
+			border-color: $disabled-border;
+		}
+	}
+	&.faded {
+		@extend %#{$color}-bg-grey;
+		&:hover, &:active, &:focus {
+			@extend %#{$color}-bg-active;
+			border-color: transparent;
+		}
+	}
+}
+/*--- Button Color Mixins - Solid ---*/
+.btn-blue {
+	@include color-buttons("blue");
+}
+.btn-red {
+	@include color-buttons("red");
+}
+.btn-green {
+	@include color-buttons("green");
+}
+.btn-orange {
+	@include color-buttons("orange");
+}
+.btn-yellow {
+	@include color-buttons("yellow");
+}
+/*----------------------------------------------------Buttons-Mixins-Solid-*/
+
+/*-Buttons-Mixins-Stroked--------------------------------------------------*/
+@mixin color-buttons-stroked($color) {
+	@extend %#{$color}-stroke;
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	&:hover {
+		@extend %#{$color}-stroke-hover;
+	}
+	&:active, &:focus {
+		@extend %#{$color}-stroke-active;
+	}
+	&.disabled {
+		color: $disabled;
+		border-color: $disabled-border;
+		@extend %#{$color}-stroke-grey;
+		cursor: not-allowed;
+	}
+}
+/*--- Button Color Mixins - Stroked ---*/
+.btn-stroked-blue {
+	@include color-buttons-stroked("blue");
+}
+.btn-stroked-red {
+	@include color-buttons-stroked("red");
+}
+.btn-stroked-green {
+	@include color-buttons-stroked("green");
+}
+.btn-stroked-orange {
+	@include color-buttons-stroked("orange");
+}
+.btn-stroked-yellow {
+	@include color-buttons-stroked("yellow");
+}
+/*--- Ghost Button ---*/
+.btn-ghost {
+	color: #fff;
+	background-color: transparent;
+	border: solid 1px #fff;
+	&:active,
+	&:hover {
+		color: $main-blue;
+		border-color: #fff;
+		background-color: #fff;
+	}
+}
+/*--------------------------------------------------Buttons-Mixins-Stroked-*/
+
+/*-Button Loader-----------------------------------------------------------*/
+.btn-loader:not(.disabled) {
+	&:before {
+		content: '';
+		position: absolute;
+		right: 24px;
+		top: 50%;
+		margin-top: -8px;
+		width: 16px;
+		height: 16px;
+		border: 2px solid;
+		border-left-color: transparent;
+		border-radius: 50%;
+		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+		opacity: 0;
+		-moz-transition-duration: 0.25s;
+		-o-transition-duration: 0.25s;
+		-webkit-transition-duration: 0.25s;
+		transition-duration: 0.25s;
+		-moz-transition-property: opacity;
+		-o-transition-property: opacity;
+		-webkit-transition-property: opacity;
+		transition-property: opacity;
+		-moz-animation-duration: 0.75s;
+		-webkit-animation-duration: 0.75s;
+		animation-duration: 0.75s;
+		-moz-animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		-moz-animation-name: rotate;
+		-webkit-animation-name: rotate;
+		animation-name: rotate;
+		-moz-animation-timing-function: linear;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+	}
+	&:after {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 0px;
+		-moz-transition-delay: 0.25s;
+		-o-transition-delay: 0.25s;
+		-webkit-transition-delay: 0.25s;
+		transition-delay: 0.25s;
+		-moz-transition-duration: 0.75s;
+		-o-transition-duration: 0.75s;
+		-webkit-transition-duration: 0.75s;
+		transition-duration: 0.75s;
+		-moz-transition-property: width;
+		-o-transition-property: width;
+		-webkit-transition-property: width;
+		transition-property: width;
+	}
+	&.sending {
+		pointer-events: none;
+		cursor: not-allowed;
+		&:not(.expand) { text-align: left; }
+		&:before {
+			-moz-transition-delay: 0.25s;
+			-o-transition-delay: 0.25s;
+			-webkit-transition-delay: 0.25s;
+			transition-delay: 0.25s;
+			-moz-transition-duration: 1s;
+			-o-transition-duration: 1s;
+			-webkit-transition-duration: 1s;
+			transition-duration: 1s;
+			filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+			opacity: 1;
+		}
+		&:after {
+			-moz-transition-delay: 0s;
+			-o-transition-delay: 0s;
+			-webkit-transition-delay: 0s;
+			transition-delay: 0s;
+			width: 30px;
+		}
+	}//END .sending
+}
+
+@keyframes rotate {
+	0% {
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+/*-----------------------------------------------------------Button Loader-*/

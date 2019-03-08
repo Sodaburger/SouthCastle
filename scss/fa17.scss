@@ -1,0 +1,292 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * fa17.css
+ * =========================================================================
+ *
+ * Table of Contents
+ * -----------------
+ *
+ * + Import Variables/Libraries
+ * + Media Query Ranges
+ * + Header
+ * + Top Nav
+ * + Footer
+ * + 
+ * + Shame (Should always be the last item in stylesheet)
+ *
+ * Read more:
+ * - http://www.sitepoint.com/architecture-sass-project/
+ * - https://css-tricks.com/sass-style-guide/
+ *
+ * @TODO: Update TOC as necessary.
+ *
+ * @BUG:
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/*-Import Variables/Libraries----------------------------------------------*/
+@import "helpers/functions.scss";				// Custom SASS Functions
+@import "layout/grid.scss";						// Grid system
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Cabin:400,400i,600');
+$cabin: 'Cabin', 'Gill Sans', "Gill Sans MT", Calibri, sans-serif;
+$cinzel: 'Cinzel Decorative', cursive;
+
+@import "helpers/theme-colors.scss";			// Theme Colors
+/*----------------------------------------------Import Variables/Libraries-*/
+
+/*-Header------------------------------------------------------------------*/
+.slideshow {
+	.title {
+		.brand {
+			font-family: $cinzel;
+			position: relative;
+			.dropcap {
+				position: absolute;
+				font-size: 2.2em;
+			}
+		}
+		.tagline {
+			font-family: $cabin;
+			font-weight: 400;
+			width: 100%;
+			display: block;
+		}
+	}
+	@media #{$small-only} {
+		.title {
+			.brand .dropcap {
+				top: -10px;
+				+ span { margin-left: 60px; }
+			}
+			.tagline {
+				font-size: 33px;
+				margin-left: 30px;
+			}
+		}
+		.carousel-caption {
+			width: 100%;
+			.c4, .c5 {
+				width: 100%;
+				min-width: 290px;
+				position: relative;
+			}
+		}
+		.slide-image .c4 {
+			visibility: visible;
+		//	img { max-height: 250px; }
+		}
+		.c4 .rook > svg, .c4 .rook { max-height: 98px; }
+	}//END media:small
+	@media #{$xsmall-only} {
+		.title {
+			font-size: 1em;
+			.brand .dropcap {
+				top: -10px;
+				+ span { margin-left: 30px; }
+			}
+			.tagline {
+				font-size: 17px;
+				margin-left: 16px;
+			}
+		}
+		//.c4 img { max-width: 50%; }
+		.c4 .rook > svg, .c4 .rook { max-height: 55px; }
+	}//END media:xsmall
+	@media #{$medium-only} {
+		.title {
+			.brand .dropcap {
+				top: -10px;
+				+ span { margin-left: 60px; }
+			}
+			.tagline {
+				font-size: 3.4rem;//35px;
+				margin-left: 3.4%;//35px;
+			}
+		}
+		.rook > svg, .rook { max-height: 82px; }
+		.carousel-caption {
+			width: 100%;
+			.c4, .c5 {
+				width: 100%;
+				position: relative;
+			}
+			.c4 svg { max-height: 105px; }
+		}
+	}//END media:medium
+	@media #{$large-up} {
+		.title {
+			text-align: left;
+			.brand .dropcap {
+				top: -15px;
+				+ span { margin-left: 70px; }
+			}
+			.tagline {
+				font-size: 4rem;//40px;
+				margin-left: 90px;
+			}
+		}
+		.logo-holder { text-align: right; }
+		.brand-text { padding-left: 0px; }
+		.rook > svg, .rook {
+		//	max-height: 125px;
+			max-height: 190px;
+			margin-bottom: 10px;
+		}
+	}//END media:large
+	@media #{$xlarge-up} {
+		.title {
+			.brand .dropcap + span { margin-left: 90px; }
+			.tagline {
+				font-size: 5rem;//50px;
+				margin-left: 110px;
+			}
+		}
+		.brand-text { padding-left: 0px; }
+		.rook > svg, .rook {
+			max-height: 250px;
+		//	max-height: 150px;
+		//	margin-bottom: 10px;
+		}
+	}//END media:xlarge
+}//END .slideshow
+/*------------------------------------------------------------------Header-*/
+
+/*-Top Nav-----------------------------------------------------------------*/
+@import "layout/header.scss";						// Header styles
+.navbar.affix { height: 52px; }
+.navbar-collapse {
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 1px 0 0 #ececec;
+}
+.navbar-nav {
+	box-shadow: none;
+	> .uptop {
+		position: absolute;
+		right: 15px;
+		&.active > a { display: none; }
+	}
+}
+//.navbar-nav > .active > a { background-color: #900 !important; }//to match logo
+.navbar-brand.rook {
+	max-height: 50px;
+	max-width: 100px;
+	overflow: hidden;
+	svg {
+		padding-top: 2px;
+		height: 75px;
+	}
+}
+@media #{$medium-down} {
+	.navbar-brand.rook svg { padding-left: 5px; }
+}
+
+@media #{$medium-up} {
+	.navbar-brand {
+	    padding: 0;
+	    width: 100%;
+	    height: 100%;
+	    max-height: 50px;
+	    padding: 0 20px;
+	    position: relative;
+	    z-index: 2;
+	}
+}//END media:medium-up
+/*-----------------------------------------------------------------Top Nav-*/
+
+/*-Footer------------------------------------------------------------------*/
+.footer {
+	.footer-logo {
+		overflow: hidden;
+		svg {
+			max-width: 100px;
+			margin-top: 25px;
+		}
+/*
+		border: none;
+		box-shadow: none;
+		background-color: transparent;
+		&:before, &:after {box-shadow: none; }
+		.logo.waxseal {
+			max-width: 124px;
+		}
+*/	.logo-circle-sm { max-width: 114px; }
+	}
+}
+/* ---Bottomnav --- */
+/*-----------------------------------------------------------------Footer-*/
+
+/*-Resume-----------------------------------------------------------------*/
+.calltoaction {
+	background-image: url(../images/section_header.jpg);
+	background-position: center bottom;
+	&:before { opacity: .5; }
+}
+/*-----------------------------------------------------------------Resume-*/
+
+/*-Blog-Page---------------------------------------------------------------*/
+.body-blog {
+	.navbar-nav > .uptop { display: none; }
+	.module-categories .list-grid { top: -7px; }
+
+	.tab-pane > h2 { margin-bottom: 0px; }
+
+	small.contractor {
+		display: block;
+		margin: -10px auto 10px;
+	}
+	.time,
+	.location {
+		position: relative;
+		margin-top: 15px;
+		float: right;
+	}
+	.location {
+		opacity: 0.7;
+		padding-left: 10px;
+	}
+	.module-Education .time {
+		margin-top: 0px;
+		opacity: 0.7;
+	}//.module-Education
+}//END .blog-body
+
+@media #{$medium-down} {
+	.body-blog {
+		.wrapper-post { padding: 0 15px; }
+		.wrapper-pagination { margin: 5px -5px; }
+		.sidebar {
+			.table-responsive { border-width: 0px; }
+			.time { float: none; }
+		}//END .sidebar
+	}
+}
+@media #{$small-only} {
+	.body-blog .sidebar {
+		.text-pod { padding: 0 15px; }
+	}
+}
+
+.wrapper-pagination .nav-pills {
+	float: right;
+	&>li > a {
+		&:hover, &:focus {
+			background-color: $main;
+			color: $white;
+		}
+	}
+	&>li.active > a {
+		background-color: $main;
+		color: $white;
+	}
+}
+.nah { opacity: 0.5; }
+
+@media (min-width: 768px) {
+	.module-categories .thumb-overlay .published { left: 0px; }
+}
+/*---------------------------------------------------------------Blog-Page-*/
+
+@import "shame.scss";			// Shame

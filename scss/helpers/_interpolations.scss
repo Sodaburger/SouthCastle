@@ -1,0 +1,171 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * interpolations.scss
+ * =========================================================================
+ * 
+ * Read More: http://krasimirtsonev.com/blog/article/SASS-interpolation-in-a-name-of-variable-nest-variables-within-variables
+ *
+ * @TODO: Update TOC as necessary.
+ * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/*-Interpolations for Mixins-----------------------------------------------*/
+
+/*--- Button Color Mixins - Solid ---*/
+%blue-bg { 
+	background-color: $blue-default;
+	border-color: $blue-default;
+}
+%blue-bg-hover { 
+	background-color: $blue-hover; 
+	border-color: $blue-hover; 
+}
+%blue-bg-active { 
+	background-color: $blue-active; 
+	border-color: $blue-active;
+}
+%blue-bg-grey {
+	color: $blue-text-disabled;
+	background-color: $blue-bg-disabled;
+	border: solid 1px $blue-text-disabled;
+}
+
+%red-bg { 
+	background-color: $red-btn;
+	border-color: $red-btn; 
+}
+%red-bg-hover { 
+	background-color: $red-hover; 
+	border-color: $red-hover;
+}
+%red-bg-active { 
+	background-color: $red-active; 
+	border-color: $red-active;
+}
+%red-bg-grey {
+	color: $red-text-disabled;
+	background-color: $red-bg-disabled;
+	border: solid 1px $red-text-disabled;
+}
+
+%green-bg { 
+	background-color: $green-btn;
+	border-color: $green-btn; 
+}
+%green-bg-hover { 
+	background-color: $green-hover; 
+	border-color: $green-hover;
+}
+%green-bg-active { 
+	background-color: $green-active; 
+	border-color: $green-active;
+}
+%green-bg-grey {
+	color: $green-text-disabled;
+	background-color: $green-bg-disabled;
+	border: solid 1px $green-text-disabled;
+}
+
+%orange-bg { 
+	background-color: $orange-btn;
+	border-color: $orange-btn; 
+}
+%orange-bg-hover { 
+	background-color: $orange-hover; 
+	border-color: $orange-hover;
+}
+%orange-bg-active { 
+	background-color: $orange-active; 
+	border-color: $orange-active;
+}
+%orange-bg-grey {
+	color: $orange-text-disabled;
+	background-color: $orange-bg-disabled;
+	border: solid 1px $orange-text-disabled;
+}
+
+%yellow-bg { 
+	background-color: $yellow-btn;
+	border-color: $yellow-btn; 
+}
+%yellow-bg-hover { 
+	background-color: $yellow-hover; 
+	border-color: $yellow-hover;
+}
+%yellow-bg-active { 
+	background-color: $yellow-active; 
+	border-color: $yellow-active;
+}
+%yellow-bg-grey {
+	color: $yellow-text-disabled;
+	background-color: $yellow-bg-disabled;
+	border: solid 1px $yellow-text-disabled;
+}
+
+/*--- Button Color Mixins - Stroked ---*/
+%blue-stroke { border-color: $blue-default; color: $blue-default; }
+%blue-stroke-hover {
+	background-color: $blue-bg-disabled;
+	border-color: $blue-hover;
+	color: $blue-hover;
+}
+%blue-stroke-active {
+	color: $blue-active;
+	background-color: $blue-bg-disabled;
+	border-color: $blue-active;
+}
+%blue-stroke-grey { background-color: $blue-bg-disabled; }
+
+%red-stroke { border-color: $red-btn; color: $red-btn; }
+%red-stroke-hover {
+	background-color: $red-bg-disabled;
+	border-color: $red-hover;
+	color: $red-hover;
+}
+%red-stroke-active {
+	color: $red-active;
+	background-color: $red-bg-disabled;;
+	border-color: $red-active;
+}
+%red-stroke-grey { background-color: $red-bg-disabled; }
+
+%green-stroke { border-color: $green-btn; color: $green-btn; }
+%green-stroke-hover {
+	background-color: $green-bg-disabled;
+	border-color: $green-hover;
+	color: $green-hover;
+}
+%green-stroke-active {
+	color: $green-active;
+	background-color: $green-bg-disabled;
+	border-color: $green-active;
+}
+%green-stroke-grey { background-color: $green-bg-disabled; }
+
+%orange-stroke { border-color: $orange-btn; color: $orange-btn; }
+%orange-stroke-hover {
+	background-color: $orange-bg-disabled;
+	border-color: $orange-hover;
+	color: $orange-hover;
+}
+%orange-stroke-active {
+	color: $orange-active;
+	background-color: $orange-bg-disabled;
+	border-color: $orange-active;
+}
+%orange-stroke-grey { background-color: $orange-bg-disabled; }
+
+%yellow-stroke { border-color: $yellow-btn; color: $yellow-active; }
+%yellow-stroke-hover {
+	background-color: $yellow-bg-disabled;
+	border-color: $yellow-hover;
+	color: $yellow-hover;
+}
+%yellow-stroke-active {
+	color: $yellow-active;
+	background-color: $yellow-bg-disabled;
+	border-color: $yellow-active;
+}
+%yellow-stroke-grey { background-color: $yellow-bg-disabled; }
+/*-----------------------------------------------Interpolations for Mixins-*/

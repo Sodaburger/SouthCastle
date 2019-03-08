@@ -1,0 +1,1 @@
+<a class="btn btn-lg" href="https://docs.google.com/document/d/1kcqQVQ0vDW9zCqPaN-N6-0ZurP1fexGe-vO_yzM0Sns/edit?usp=sharing" target="_blank"><?php echo(isset($btnText)? $btnText : 'Download'); ?></a>

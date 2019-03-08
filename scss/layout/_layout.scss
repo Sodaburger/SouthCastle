@@ -1,0 +1,34 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * layout.scss
+ * =========================================================================
+ *
+ * Table of Contents
+ * -----------------
+ *
+ * + Layout
+ *	 - Navs
+ *		-- Header
+ *		-- Footer
+ *	 - Components
+ *		-- Forms
+ * + Other
+ *
+ *
+ * @TODO: Update TOC as necessary.
+ *
+ * @BUG:
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/*-Layout------------------------------------------------------------------*/
+//This is a "macro" directory (defining the global wireframe). It contains a number of files for the main sections of the layout
+
+/*--- navs ---*/
+@import "header.scss";			// Header
+@import "footer.scss";			// Footer
+/*------------------------------------------------------------------Layout-*/
+
+/*-Misc--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------Misc-*/

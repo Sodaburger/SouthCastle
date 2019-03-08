@@ -1,0 +1,208 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * colors.scss
+ * =========================================================================
+ *
+ * Table of Contents
+ * -----------------
+ *
+ * + Variables
+ * - Form Elements
+ * - Buttons
+ * + Interpolations for Mixins
+ * 
+ * @TODO: Update TOC as necessary.
+ *      - Consolodate "grays"
+ * !! Name Your SASS Variables Modularly !!
+ *
+ * @BUG:
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+/*-Variables---------------------------------------------------------------*/
+
+/* --- Primary Color Palette --- */
+$main-blue: #376caf; //Primary Blue
+$dark-blue: #1e365d; //Secondary Blue
+$uni-red: #ff5018; //University Red
+$vendor-orange: #cc6500; //Vendor Orange
+$data-yellow: #fddd1c; //Benchmarking
+$news-green: #0a9e02; //News Green
+
+/* --- Gray Color Palette --- */
+$gray-50 : #EEF0F4;
+$gray-100: #D7D9DD;
+$gray-200: #C1C2C5;
+$gray-300: #AAABAE;
+$gray-400: #939497;
+$gray-500: #7D7E7F;
+$gray-600: #666768;
+$gray-700: #4F5051; //Main
+$gray-800: #393939;
+$gray-900: #222222;
+
+$gray1: #263238;
+$gray2: #b6b6b6;
+$gray3: #808080;
+$gray4: #444444;
+$gray5: #cccccc;
+$grey6: #e6e6e6;
+$gray6b: #6b6563;
+$gray7: #7e7877;
+$gray80: $gray3;
+$gray9: #999999;
+$gray96: #969696;
+
+/* --- Blue Color Palette --- */
+$dsblue-50 : #EFF4FA;
+$dsblue-100: #D0DEF0;
+$dsblue-200: #AAC2E0;
+$dsblue-300: #84A5D0;
+$dsblue-400: #5D89BF;
+$dsblue-500: #376CAF; //Main
+$dsblue-600: #325A9A;
+$dsblue-700: #28487B;
+$dsblue-800: #1E365D; //Secondary
+$dsblue-900: #0F1B2E;
+
+/* --- Gold Color Palette --- */
+$gold-50 : #FFFCEB;
+$gold-100: #FEF5C2;
+$gold-200: #FEEC86;
+$gold-300: #FDE249;
+$gold-400: #FDDD1C; //Current
+$gold-500: #F2CE02;
+$gold-600: #CAAC02; //Main
+$gold-700: #8D7801;
+$gold-800: #514501;
+$gold-900: #282200;
+
+/* --- Red (University) Color Palette --- */
+$university-50 : #FFF0EB;
+$university-100: #FFC8B6;
+$university-200: #FFA082;
+$university-300: #FF784D;
+$university-400: #FF5018; //Main
+$university-500: #D44213;
+$university-600: #A9340E;
+$university-700: #7F260A;
+$university-800: #541805;
+$university-900: #290A00;
+//Red
+$red-50 : $university-50;
+$red-100: $university-100;
+$red-200: $university-200;
+$red-300: $university-300;
+$red-400: $university-400; //Main
+$red-500: $university-500;
+$red-600: $university-600;
+$red-700: $university-700;
+$red-800: $university-800;
+$red-900: $university-900;
+
+/* --- Green (News) Color Palette --- */
+$news-50 : #ECFFEB;
+$news-100: #BFECBC;
+$news-200: #92D88E;
+$news-300: #64C55F;
+$news-400: #37B131;
+$news-500: #0A9E01; //Main
+$news-600: #088D01;
+$news-700: #077901;
+$news-800: #055101;
+$news-900: #022800;
+//Green
+$green-50 : $news-50;
+$green-100: $news-100;
+$green-200: $news-200;
+$green-300: $news-300;
+$green-400: $news-400;
+$green-500: $news-500; //Main
+$green-600: $news-600;
+$green-700: $news-700;
+$green-800: $news-800;
+$green-900: $news-900;
+
+/* --- Orange/Brown (Vendor Ratings) Color Palette --- */
+$ratings-50 : #FFF5EB;
+$ratings-100: #F5D8BC;
+$ratings-200: #EBBC8D;
+$ratings-300: #E09F5E;
+$ratings-400: #D6832F;
+$ratings-500: #CC6600; //Main
+$ratings-600: #A85400;
+$ratings-700: #854300;
+$ratings-800: #613100;
+$ratings-900: #3D1F00;
+//Orange
+$orange-50 : $ratings-50;
+$orange-100: $ratings-100;
+$orange-200: $ratings-200;
+$orange-300: $ratings-300;
+$orange-400: $ratings-400;
+$orange-500: $ratings-500; //Main
+$orange-600: $ratings-600;
+$orange-700: $ratings-700;
+$orange-800: $ratings-800;
+$orange-900: $ratings-900;
+
+/* --- Status Colors --- */
+$danger		: #ff5b5b;
+$danger-bg	: #FFB5B8;
+$critical   : #ff5018; // errors, weak, critical warnings
+$critical-bg: #fff0eb;
+$warning    : #caac02; // warnings, mediocre
+$warning-bg : #fffceb;
+$success    : #0a9e02; // success, strong
+$success-bg : #ecffeb;
+
+/*-Button Colors-----------------------------------------------------------*/
+/* --- Buttons --- */
+$disabled: #cccccc; //#c8c8c8;
+$disabled-border: $disabled;//#cfd8dc;
+
+/*--- Button Colors ---*/
+$main-blue: #376caf;
+$blue-default: $main-blue;//#376caf;
+$blue-hover: #5da5ff;
+$blue-active: #274360;
+$blue-bg-disabled: #e9eff7;
+$blue-text-disabled: #9fb9d9;
+
+$red-btn: $uni-red;//#c93e27;
+$red-hover: #ff7d68;
+$red-active: #a4321f;
+$red-bg-disabled: #f8e9e6;
+$red-text-disabled: #f0b7bc;
+
+$green-btn: $news-green;//#48a54c;
+$green-hover: #65cf6a;
+$green-active: #2e7731;
+$green-bg-disabled: #eaf6eb;
+$green-text-disabled: #74b776;
+
+$orange-btn: $vendor-orange;//#b16029;
+$orange-hover: #fb9149;
+$orange-active: #8e4412;
+$orange-bg-disabled: #f9f0e9;
+$orange-text-disabled: #dfaf8f;
+
+$yellow-btn: $data-yellow;//#f3bf50;
+$yellow-hover: #f7d283;
+$yellow-active: #d89d1f;
+$yellow-bg-disabled: #faf3e5;
+$yellow-text-disabled: #e3ca94;
+
+/* --- Form Elements --- */
+$form-disabled-bg: #f2f2f2;
+$form-border: #acacac;
+$form-border-warning: #f3bf50;
+$form-border-error: #c93e27;
+$form-border-success: #66bb6a;
+$form-placeholder-icon: #cccccc;
+$form-readonly: #444444;
+$form-placeholder: #9b9b9b;
+$switch-off: #b6b6b6;
+
+/*-Background Colors-------------------------------------------------------*/
