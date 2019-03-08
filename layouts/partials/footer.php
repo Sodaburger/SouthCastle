@@ -10,6 +10,8 @@
 				<!-- Social Buttons -->
 				<section class="social-icons">
 					<h3 class="hide">Social Buttons</h3>
+					<a class="btn-social github" data-toggle="tooltip" data-placement="top" title="GitHub" href="https://github.com/sodaburger" target="_blank"><span class="fa fa-github"></span></a>
+					<a class="btn-social codepen" data-toggle="tooltip" data-placement="top" title="CodePen" href="https://codepen.io/sodaburger/" target="_blank"><span class="fa fa-codepen"></span></a>
 					<a class="btn-social coroflot" data-toggle="tooltip" data-placement="top" title="Coroflot" href="https://www.coroflot.com/Sodaburger" target="_blank">
 						<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="152.000000pt" height="152.000000pt" viewBox="0 0 152.000000 152.000000" preserveAspectRatio="xMidYMid meet">
 							<g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">

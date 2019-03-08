@@ -451,6 +451,10 @@ input.btn { outline: none; border: none; }
 
 .social-icons .coroflot:hover { background-color: #ff5400; }
 
+.social-icons .github:hover { background-color: #24292e; }
+
+.social-icons .codepen:hover { background-color: #1e1f26; /* #1e1f26; */ }
+
 .btn-social.coroflot svg { max-width: 14px; max-height: 14px; margin-bottom: -2px; }
 
 /* //From "theme/css/colors/light.css" 23) SOCIAL BUTTONS
