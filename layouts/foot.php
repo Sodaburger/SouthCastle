@@ -27,6 +27,7 @@
 	<script src="theme/js/colors/google_map_pomegranate.min.js"></script>
 	<script src="theme/js/vendor/simple.min.js"></script>
 	<script src="theme/js/main.min.js"></script>
+	<script src="js/fa17.js"></script>
 
 </body>
 </html>

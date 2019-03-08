@@ -1,7 +1,7 @@
 <!-- CALL TO ACTION - Download / Newsletter -->
 <section class="calltoaction" id="resume">
 	<div class="bg-section">
-		<img src="theme/images/bg_2.jpg" alt="Call To Action Section Background">
+		<img src="../images/section_header.jpg" alt="" />
 	</div>
 	<div class="container">
 		<!-- Section Header -->

@@ -23,7 +23,10 @@
 					<a href="#top">Home</a>
 				</li>
 				<li class="nav-work" data-toggle="collapse" data-target="#navbar-collapse-1">
-					<a href="#projects">Work</a>
+					<a href="#work">Work</a>
+				</li>
+				<li class="nav-freelance" data-toggle="collapse" data-target="#navbar-collapse-1">
+					<a href="#freelance">Freelance</a>
 				</li><!--
 				<li data-toggle="collapse" data-target="#navbar-collapse-1">
 					<a href="#work">Logos</a>

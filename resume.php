@@ -100,7 +100,7 @@
 									<span class="time" datetime="2012">2010-2012</span>
 									<h3 class="media-heading title">
 										<a href="blog-detail.html">American Express</a></h3>
-										<small class="contractor">via Insight Global &amp; ConsultNet</small>
+										<small class="contractor">via Insight Global &amp; Advantage xPO</small>
 									<strong class="job-title">Technical Writer</strong>
 									<ul class="description">
 										<li>Managed Departmental content on American Express intranet following corporate design standards in JARIS (PORT) and Inquira (ECCO) Content Management Systems</li>

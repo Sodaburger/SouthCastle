@@ -18,8 +18,9 @@
 			include 'views/section_more.php';
 			include 'views/section_blog.php';
 			include 'views/section_team.php';
-*/			include 'views/section_projects.php';
-		//	include 'views/section_work.php';
+*/
+			include 'views/section_work.php';
+			include 'views/section_freelance.php';
 			include 'views/section_download.php';
 			include 'views/section_contact.php';
 		?></div>

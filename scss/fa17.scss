@@ -196,6 +196,36 @@ $cinzel: 'Cinzel Decorative', cursive;
 }//END media:medium-up
 /*-----------------------------------------------------------------Top Nav-*/
 
+/*-Footer------------------------------------------------------------------*/
+.footer {
+	.footer-logo {
+		overflow: hidden;
+		svg {
+			max-width: 100px;
+			margin-top: 25px;
+		}
+/*
+		border: none;
+		box-shadow: none;
+		background-color: transparent;
+		&:before, &:after {box-shadow: none; }
+		.logo.waxseal {
+			max-width: 124px;
+		}
+*/	.logo-circle-sm { max-width: 114px; }
+	}
+}
+/* ---Bottomnav --- */
+/*-----------------------------------------------------------------Footer-*/
+
+/*-Resume-----------------------------------------------------------------*/
+.calltoaction {
+	background-image: url(../images/section_header.jpg);
+	background-position: center bottom;
+	&:before { opacity: .5; }
+}
+/*-----------------------------------------------------------------Resume-*/
+
 /*-Blog-Page---------------------------------------------------------------*/
 .body-blog {
 	.navbar-nav > .uptop { display: none; }
@@ -259,24 +289,4 @@ $cinzel: 'Cinzel Decorative', cursive;
 }
 /*---------------------------------------------------------------Blog-Page-*/
 
-/*-Footer------------------------------------------------------------------*/
-.footer {
-	.footer-logo {
-		overflow: hidden;
-		svg {
-			max-width: 100px;
-			margin-top: 25px;
-		}
-/*
-		border: none;
-		box-shadow: none;
-		background-color: transparent;
-		&:before, &:after {box-shadow: none; }
-		.logo.waxseal {
-			max-width: 124px;
-		}
-*/	.logo-circle-sm { max-width: 114px; }
-	}
-}
-/* ---Bottomnav --- */
-/*-----------------------------------------------------------------Footer-*/
+@import "shame.scss";			// Shame

@@ -120,9 +120,9 @@ ul.ul li:before { content: '\25A0'; display: block; position: relative; max-widt
 
 /*-----------------------------------------------------------General Lists-*/
 /*-Line Clamping-----------------------------------------------------------*/
-.line-clamp { display: block; display: -webkit-box; position: relative; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; padding: 0 !important; }
+.line-clamp { display: block; display: -webkit-box; -webkit-box-orient: vertical; position: relative; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; padding: 0 !important; }
 
-.line-clamp:after { content: '...'; text-align: right; bottom: 0; right: 0; width: 25%; display: block; position: absolute; height: calc(1em * 1.2); background: linear-gradient(to right, rgba(255, 255, 255, 0), white 75%); }
+.line-clamp:after { content: '...'; text-align: right; bottom: 0; right: 0; width: 25%; display: block; position: absolute; height: calc(1em * 1.2); background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white 75%); background: linear-gradient(to right, rgba(255, 255, 255, 0), white 75%); }
 
 @supports (-webkit-line-clamp: 1) { .line-clamp:after { display: none !important; } }
 
@@ -411,17 +411,17 @@ input.btn { outline: none; border: none; }
 
 /*--------------------------------------------------Buttons-Mixins-Stroked-*/
 /*-Button Loader-----------------------------------------------------------*/
-.btn-loader:not(.disabled):before { content: ''; position: absolute; right: 24px; top: 50%; margin-top: -8px; width: 16px; height: 16px; border: 2px solid; border-left-color: transparent; border-radius: 50%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; transition-duration: 0.25s; transition-property: opacity; -webkit-animation-duration: 0.75s; animation-duration: 0.75s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-name: rotate; animation-name: rotate; -webkit-animation-timing-function: linear; animation-timing-function: linear; }
+.btn-loader:not(.disabled):before { content: ''; position: absolute; right: 24px; top: 50%; margin-top: -8px; width: 16px; height: 16px; border: 2px solid; border-left-color: transparent; border-radius: 50%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -webkit-transition-duration: 0.25s; transition-duration: 0.25s; -webkit-transition-property: opacity; transition-property: opacity; -webkit-animation-duration: 0.75s; animation-duration: 0.75s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-name: rotate; animation-name: rotate; -webkit-animation-timing-function: linear; animation-timing-function: linear; }
 
-.btn-loader:not(.disabled):after { content: ''; display: inline-block; height: 100%; width: 0px; transition-delay: 0.25s; transition-duration: 0.75s; transition-property: width; }
+.btn-loader:not(.disabled):after { content: ''; display: inline-block; height: 100%; width: 0px; -webkit-transition-delay: 0.25s; transition-delay: 0.25s; -webkit-transition-duration: 0.75s; transition-duration: 0.75s; -webkit-transition-property: width; transition-property: width; }
 
 .btn-loader:not(.disabled).sending { pointer-events: none; cursor: not-allowed; }
 
 .btn-loader:not(.disabled).sending:not(.expand) { text-align: left; }
 
-.btn-loader:not(.disabled).sending:before { transition-delay: 0.25s; transition-duration: 1s; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
+.btn-loader:not(.disabled).sending:before { -webkit-transition-delay: 0.25s; transition-delay: 0.25s; -webkit-transition-duration: 1s; transition-duration: 1s; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
 
-.btn-loader:not(.disabled).sending:after { transition-delay: 0s; width: 30px; }
+.btn-loader:not(.disabled).sending:after { -webkit-transition-delay: 0s; transition-delay: 0s; width: 30px; }
 
 @-webkit-keyframes rotate { 0% {
     -webkit-transform: rotate(0deg);
@@ -443,8 +443,45 @@ input.btn { outline: none; border: none; }
 /*-Quick Fix Example-------------------------------------------------------*/
 /* Nav specificity fix. Someone used an ID in the header code (`#header a {}`) which trumps the nav selectors (`.site-nav a {}`). Use !important to override it until I have time to re-factor the header stuff. */
 /*-Quick Fix 1-------------------------------------------------------------*/
+.social-icons .deviantart:hover { background-color: #05cc48; }
+
+.social-icons .linkedin:hover { background-color: #0077b5; }
+
+.social-icons .instagram:hover { background-color: #ff0076; }
+
+.social-icons .coroflot:hover { background-color: #ff5400; }
+
+.btn-social.coroflot svg { max-width: 14px; max-height: 14px; margin-bottom: -2px; }
+
+/* //From "theme/css/colors/light.css" 23) SOCIAL BUTTONS
+.social-icons .btn-social {
+	color: #fff;
+	background-color: rgba(0,0,0,.12);
+}
+.social-icons .facebook:hover { background-color: #3b5998; }
+.social-icons .twitter:hover { background-color: #2daddc; }
+.social-icons .google-plus:hover { background-color: #d14836; }
+.social-icons .youtube:hover { background-color: #e52d27; }
+.social-icons .instagram:hover { background-color: #3b6994; }
+.social-icons .pinterest:hover { background-color: #bd081c; }
+.social-icons .email:hover {
+	color: #fff;
+	background-color: #ddd;
+}
+.social-icons .rss:hover { background-color: #f90; }
+
+// Tooltips
+.social-icons .btn-social + .tooltip .tooltip-arrow { border-top-color: rgba(0,0,0,.2); }
+.social-icons .btn-social + .tooltip .tooltip-inner { background-color: rgba(0,0,0,.2); }
+*/
 /*-Quick Fix 2-------------------------------------------------------------*/
+.blog:first-of-type { padding-bottom: 0px; }
+
+.blog:nth-of-type(2) { padding-top: 0px; }
+
 /*-Quick Fix 3-------------------------------------------------------------*/
+a[href^=mailto].btn-social:after { content: ''; }
+
 /*-Quick Fix 4-------------------------------------------------------------*/
 /*-Quick Fix 5-------------------------------------------------------------*/
 /*-Quick Fix 6-------------------------------------------------------------*/
