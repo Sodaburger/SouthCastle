@@ -31,6 +31,16 @@ You see things; and you say, &lsquo;<span>Why?</span>&rsquo;
 But I dream things that never were; and I say, &lsquo;<span>Why not?</span>&rsquo;
 <br />&ndash; George Bernard Shaw
 
+<p>&ldquo;Never be limited by other people&rsquo;s limited imaginations.&rdquo;
+<br />&mdash;&nbsp;Dr. Mae Jemison, <small>American astronaught and physician</small></p>
+
+<p>&ldsquo;
+&rdquo;
+<br />&mdash;&nbsp;</p>
+
+<p>&ldsquo;
+&rdquo;
+<br />&mdash;&nbsp;</p>
 							</div>
 						</div>
 						<!-- End Slide 1 -->

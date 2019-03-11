@@ -13,9 +13,7 @@
 	<meta property="og:image" content="/images/FacebookDefaultThumbnail.png" />
 
 <!-- GOOGLE SITE VERIFICATION -->
-	<meta name="google-site-verification" content="" />
-	<meta name="verify-v1" content="kF1Ma42+cY5kY7EFL3sh6G2IY+ZCO4PMqznk+b8yfwg=" /> 
-
+	<?php include('gsv.php'); ?>
 <!-- Facebook -->
 <?php /*
 	<meta property="og:locale" content="en_GB" />

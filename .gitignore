@@ -1,3 +1,7 @@
 .DS_Store
 scss/.sass-cache
 Thumbs.db
+
+//API keys should NOT be in your tracked source code.
+/layouts/partials/gsv.php
+/layouts/partials/ga_tag.php
