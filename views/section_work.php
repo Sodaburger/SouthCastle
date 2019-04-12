@@ -34,14 +34,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
 						<img class="img-responsive thumb" src="images/work/ds/ds-hcm_app.png" alt="" />
-						</a>
 						<time class="published">2016-2017</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">DrivingSales.com HCM</a></h3>
+						<h3 class="title">DrivingSales.com HCM</h3>
 						<small class="author"><a href="#webdesign">Web Development</a></small>
 						<p class="description">Built mockups and user flow views for HCM app</p>
 						<div class="footer-post">
@@ -53,14 +51,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
 						<img class="img-responsive thumb" src="images/work/ds/ds-redux.png" alt="" />
-						</a>
 						<time class="published">2015-2016</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">DrivingSales.com Redesign</a></h3>
+						<h3 class="title">DrivingSales.com Redesign</h3>
 						<small class="author"><a href="#webdesign">Web Development</a></small>
 						<p class="description">Implemented redesign of DrivingSales.com site</p>
 						<div class="footer-post">
@@ -72,14 +68,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/ds/ds-navs.png" alt="" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/ds/ds-navs.png" alt="" />
 						<time class="published">2016</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">DrivingSales Universal Nav</a></h3>
+						<h3 class="title">DrivingSales Universal Nav</h3>
 						<small class="author"><a href="#webdesign">Web Development</a></small>
 						<p class="description">Updated nav on all microsites</p>
 						<div class="footer-post">
@@ -92,14 +86,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/zagg/ifrogz_prank-thumb.png" alt="" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/zagg/ifrogz_prank-thumb.png" alt="" />
 						<time class="published">2012-2015</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">ZAGG.com</a></h3>
+						<h3 class="title">ZAGG.com</h3>
 						<small class="author"><a href="#">Web Development</a></small>
 						<p class="description"><!--Updated content and styles on website.-->Created custom landing pages for promotions.</p>
 						<div class="footer-post">
@@ -111,14 +103,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/zagg/email-thumb.png" alt="" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/zagg/email-thumb.png" alt="" />
 						<time class="published">2012-2015</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">ZAGG Emails</a></h3>
+						<h3 class="title">ZAGG Emails</h3>
 						<small class="author"><a href="#">Emails</a></small>
 						<p class="description">Coded html and alt text for Email Blasts</p>
 						<div class="footer-post">
@@ -151,14 +141,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/sip/sip-samples.sm.png" alt="" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/sip/sip-samples.sm.png" alt="" />
 						<time class="published">2008-2009</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">Sports Imaging Photography</a></h3>
+						<h3 class="title">Sports Imaging Photography</h3>
 						<small class="author"><a href="#graphicdesign">Graphic Design</a></small>
 						<p class="description">Created photo backgrounds</p>
 						<div class="footer-post">
@@ -170,14 +158,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/sip/sip-site.sm.png" alt="Sports Imaging Photography" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/sip/sip-site.sm.png" alt="Sports Imaging Photography" />
 						<time class="published">2009</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">Sports Imaging Photography</a></h3>
+						<h3 class="title">SportsImagingPhoto.com</h3>
 						<small class="author"><a href="#webdesign">Web Design</a></small>
 						<p class="description">Redesigned website, including online order form</p>
 						<div class="footer-post">

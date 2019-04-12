@@ -155,7 +155,7 @@ a { color: #c0392b; }
 /*---------------------------------------------------------------------------------------------- 13) BLOG ----------------------------------------------------------------------------------------------*/
 .blog .thumb-overlay .published { background-color: #c0392b; }
 
-.blog .content .title a { color: #c0392b; }
+.blog .content .title a, .blog .content .title { color: #c0392b; }
 
 .blog .footer-post .read-more { background-color: #c0392b; }
 

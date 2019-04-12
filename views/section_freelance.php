@@ -15,14 +15,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/freelance/CacheAirFest-logo.png" alt="Cache AirFest" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/freelance/CacheAirFest-logo.png" alt="Cache AirFest" />
 						<time class="published">2018</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">Cache AirFest</a></h3>
+						<h3 class="title"><a href="http://cacheairfest.com/" target="_blank">Cache AirFest</a></h3>
 						<small class="author"><a href="#graphicdesign">Logo Design</a></small>
 						<p class="description">Created event logo utilizing Illustrator</p>
 						<div class="footer-post">
@@ -34,14 +32,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/freelance/phoenician-plumbing.logo.png" alt="Phoenician Plumbling" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/freelance/phoenician-plumbing.logo.png" alt="Phoenician Plumbing" />
 						<time class="published">2018</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">Phoenician Plumbling</a></h3>
+						<h3 class="title">Phoenician Plumbing</h3>
 						<small class="author"><a href="#graphicdesign">Logo Design</a></small>
 						<p class="description">Created company logo utilizing Illustrator</p>
 						<div class="footer-post">
@@ -53,15 +49,13 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/freelance/slf.site.png" alt="Salt Lake Fertilizing" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/freelance/slf.site.png" alt="Salt Lake Fertilizing" />
 						<time class="published">2016</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">Salt Lake Fertilizing</a></h3>
-						<small class="author"><a href="#graphicdesign">Web Design</a></small>
+						<h3 class="title">SaltLakeFertilizing.com</h3>
+						<small class="author"><a href="#webdesign">Web Design</a></small>
 						<p class="description">Created company website</p>
 						<div class="footer-post">
 							<a class="comments" href="#"><i class="fa fa-code"></i>&nbsp;HTML, CSS</a>
@@ -72,14 +66,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/freelance/slf.branding.png" alt="Salt Lake Fertilizing" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/freelance/slf.branding.png" alt="Salt Lake Fertilizing" />
 						<time class="published">2016</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">Salt Lake Fertilizing</a></h3>
+						<h3 class="title">Salt Lake Fertilizing</h3>
 						<small class="author"><a href="#graphicdesign">Logo Design</a></small>
 						<p class="description">Created logo and business card, utilizing Illustrator</p>
 						<div class="footer-post">
@@ -98,7 +90,7 @@
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">Sego Lily CAD</a></h3>
+						<h3 class="title">Sego Lily CAD</h3>
 						<small class="author"><a href="#graphicdesign">Graphic design</a></small>
 						<p class="description">Designed flyer for gala and 5k</p>
 						<div class="footer-post">
@@ -110,14 +102,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/freelance/ffe-site.png" alt="Frozen Flavor Emporium" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/freelance/ffe-site.png" alt="Frozen Flavor Emporium" />
 						<time class="published">2011-2012</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">Frozen Flavor Emporium</a></h3>
+						<h3 class="title">FrozenFlavorEmporium.com</h3>
 						<small class="author"><a href="#">Web Design &amp; Social Media</a></small>
 						<p class="description">Created website; managed Facebook account</p>
 						<div class="footer-post">
@@ -129,14 +119,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/freelance/ffe-signage2.png" alt="Frozen Flavor Emporium" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/freelance/ffe-signage2.png" alt="Frozen Flavor Emporium" />
 						<time class="published">2011-2012</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">Frozen Flavor Emporium</a></h3>
+						<h3 class="title">Frozen Flavor Emporium</h3>
 						<small class="author"><a href="#">Graphic Design</a></small>
 						<p class="description">Created store signage; marketing mailers</p>
 						<div class="footer-post">
@@ -148,14 +136,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/freelance/pch-logo.png" alt="Pioneer Craft House" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/freelance/pch-logo.png" alt="Pioneer Craft House" />
 						<time class="published">2010</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">Pioneer Craft House</a></h3>
+						<h3 class="title">Pioneer Craft House</h3>
 						<small class="author"><a href="#graphicdesign">Logo Redesign</a></small>
 						<p class="description">Redesigned logo; Created test website</p>
 						<div class="footer-post">
@@ -167,14 +153,12 @@
 				<div class="wrapper-post">
 					<!-- Thumbnail -->
 					<div class="thumb-overlay">
-						<a class="link-thumb" href="#">
-							<img class="img-responsive thumb" src="images/work/ailv/CPE-Green_Screen-sm.gif" alt="Cashman Photo Enterprises" />
-						</a>
+						<img class="img-responsive thumb" src="images/work/ailv/CPE-Green_Screen-sm.gif" alt="Cashman Photo Enterprises" />
 						<time class="published">2008</time>
 					</div>
 					<!-- Post content -->
 					<div class="content">
-						<h3 class="title"><a href="#">Cashman Photo Enterprises</a></h3>
+						<h3 class="title">Cashman Photo Enterprises</h3>
 						<small class="author"><a href="#">Web Designer</a></small>
 						<p class="description">Created a beta site design utilizing PHP and Flash</p>
 						<div class="footer-post">

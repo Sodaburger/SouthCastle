@@ -242,7 +242,8 @@ a { color: $main; }
  ----------------------------------------------------------------------------------------------*/
 .blog .thumb-overlay .published { background-color: $main; }
 
-.blog .content .title a { color: $main; }
+.blog .content .title a,
+.blog .content .title { color: $main; }
 
 .blog .footer-post .read-more { background-color: $main; }
 .blog .footer-post .read-more:hover { background-color: $main-dark; }
