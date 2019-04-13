@@ -40,11 +40,11 @@
 					<!-- Post content -->
 					<div class="content">
 						<h3 class="title">DrivingSales.com HCM</h3>
-						<small class="author"><a href="#webdesign">Web Development</a></small>
+						<small class="author webdesign">Web Development</a></small>
 						<p class="description">Built mockups and user flow views for HCM app</p>
 						<div class="footer-post">
-							<a class="comments" href="#tools"><i class="fa fa-code"></i>&nbsp;HTML, SCSS/CSS, Laravel, Blade, Photoshop
-							<a class="read-more" href="#" title="View Project"><span class="fa fa-plus"></span></a>
+							<span class="comments tools"><i class="fa fa-code"></i>&nbsp;HTML, SCSS/CSS, Laravel, Blade, Photoshop</span>
+							<!--<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>-->
 						</div>
 					</div>
 				</div>
@@ -57,11 +57,11 @@
 					<!-- Post content -->
 					<div class="content">
 						<h3 class="title">DrivingSales.com Redesign</h3>
-						<small class="author"><a href="#webdesign">Web Development</a></small>
+						<small class="author webdesign">Web Development</small>
 						<p class="description">Implemented redesign of DrivingSales.com site</p>
 						<div class="footer-post">
-							<a class="comments" href="#tools"><i class="fa fa-code"></i>&nbsp;HTML, SCSS/CSS, Laravel, Blade, Photoshop
-							<a class="read-more" href="#" title="View Project"><span class="fa fa-plus"></span></a>
+							<span class="comments tools"><i class="fa fa-code"></i>&nbsp;HTML, SCSS/CSS, Laravel, Blade, Photoshop</span>
+							<!--<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>-->
 						</div>
 					</div>
 				</div>
@@ -74,11 +74,11 @@
 					<!-- Post content -->
 					<div class="content">
 						<h3 class="title">DrivingSales Universal Nav</h3>
-						<small class="author"><a href="#webdesign">Web Development</a></small>
+						<small class="author webdesign">Web Development</small>
 						<p class="description">Updated nav on all microsites</p>
 						<div class="footer-post">
-							<a class="comments" href="#"><span class="fa fa-code"></span>&nbsp;HTML, CSS, WordPress</a>
-							<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>
+							<span class="comments"><span class="fa fa-code"></span>&nbsp;HTML, CSS, WordPress</span>
+							<!--<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>-->
 						</div>
 					</div>
 				</div>
@@ -92,11 +92,11 @@
 					<!-- Post content -->
 					<div class="content">
 						<h3 class="title">ZAGG.com</h3>
-						<small class="author"><a href="#">Web Development</a></small>
+						<small class="author">Web Development</small>
 						<p class="description"><!--Updated content and styles on website.-->Created custom landing pages for promotions.</p>
 						<div class="footer-post">
-							<a class="comments" href="#"><span class="fa fa-code"></span>&nbsp;HTML, CSS, CodeIgniter, Photoshop</a>
-							<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>
+							<span class="comments"><span class="fa fa-code"></span>&nbsp;HTML, CSS, CodeIgniter, Photoshop</span>
+							<!--<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>-->
 						</div>
 					</div>
 				</div>
@@ -109,11 +109,11 @@
 					<!-- Post content -->
 					<div class="content">
 						<h3 class="title">ZAGG Emails</h3>
-						<small class="author"><a href="#">Emails</a></small>
+						<small class="author">Emails</small>
 						<p class="description">Coded html and alt text for Email Blasts</p>
 						<div class="footer-post">
-							<a class="comments" href="#"><span class="fa fa-code"></span>&nbsp;HTML, CSS, Photoshop</a>
-							<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>
+							<span class="comments"><span class="fa fa-code"></span>&nbsp;HTML, CSS, Photoshop</span>
+							<!--<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>-->
 						</div>
 					</div>
 				</div>
@@ -133,7 +133,7 @@
 						<p class="description">Redesigned logo; Created test website</p>
 						<div class="footer-post">
 							<a class="comments" href="#"><i class="fa fa-paint-brush"></i>&nbsp;Adobe Illustrator, Adobe Photoshop</a>
-							<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>
+							<!--<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>-->
 						</div>
 					</div>
 				</div>
@@ -147,11 +147,11 @@
 					<!-- Post content -->
 					<div class="content">
 						<h3 class="title">Sports Imaging Photography</h3>
-						<small class="author"><a href="#graphicdesign">Graphic Design</a></small>
+						<small class="author graphicdesign">Graphic Design</small>
 						<p class="description">Created photo backgrounds</p>
 						<div class="footer-post">
-							<a class="comments" href="#"><span class="fa fa-code"></span>&nbsp;HTML, CSS, PHP, Photoshop</a>
-							<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>
+							<span class="comments"><span class="fa fa-code"></span>&nbsp;HTML, CSS, PHP, Photoshop</span>
+							<!--<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>-->
 						</div>
 					</div>
 				</div>
@@ -164,11 +164,11 @@
 					<!-- Post content -->
 					<div class="content">
 						<h3 class="title">SportsImagingPhoto.com</h3>
-						<small class="author"><a href="#webdesign">Web Design</a></small>
+						<small class="author webdesign">Web Design</small>
 						<p class="description">Redesigned website, including online order form</p>
 						<div class="footer-post">
-							<a class="comments" href="#"><span class="fa fa-code"></span>&nbsp;HTML, CSS, PHP, JavaScript, Photoshop</a>
-							<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>
+							<span class="comments"><span class="fa fa-code"></span>&nbsp;HTML, CSS, PHP, JavaScript, Photoshop</span>
+							<!--<a class="read-more" href="#" title="Read More"><span class="fa fa-plus"></span></a>-->
 						</div>
 					</div>
 				</div>
