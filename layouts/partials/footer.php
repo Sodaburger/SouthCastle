@@ -20,8 +20,8 @@
 							</g>
 						</svg>
 					</a>
-					<a class="btn-social deviantart" data-toggle="tooltip" data-placement="top" title="Deviant Art" href="https://www.deviantart.com/sodaburger/gallery/" target="_blank"><span class="fa fa-deviantart"></span></a>
-					<a class="btn-social instagram" data-toggle="tooltip" data-placement="top" title="Instagram" href="https://www.instagram.com/commiechung/" target="_blank"><span class="fa fa-instagram"></span></a>
+				<!--<a class="btn-social deviantart" data-toggle="tooltip" data-placement="top" title="Deviant Art" href="https://www.deviantart.com/sodaburger/gallery/" target="_blank"><span class="fa fa-deviantart"></span></a>
+					<a class="btn-social instagram" data-toggle="tooltip" data-placement="top" title="Instagram" href="https://www.instagram.com/commiechung/" target="_blank"><span class="fa fa-instagram"></span></a>-->
 					<a class="btn-social linkedin" data-toggle="tooltip" data-placement="top" title="linkedin" href="https://www.linkedin.com/in/sodaburger/" target="_blank"><span class="fa fa-linkedin"></span></a>
 				<!--<a class="btn-social facebook" data-toggle="tooltip" data-placement="top" title="Facebook" href="https://www.facebook.com/Sodaburger" target="_blank"><span class="fa fa-facebook"></span></a>
 					<a class="btn-social twitter" data-toggle="tooltip" data-placement="top" title="Twitter" href="https://twitter.com/commiechung" target="_blank"><span class="fa fa-twitter"></span></a>

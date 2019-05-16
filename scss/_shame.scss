@@ -90,6 +90,20 @@ a[href^=mailto].btn-social:after {
 }
 
 /*-Quick Fix 4-------------------------------------------------------------*/
+.module-categories .nav-tabs > li {
+	> a {
+		color: $main;
+		&:hover { color: $main; }
+	}
+	&.active > a:hover,
+	&.active > a:focus,
+	&.active > a {
+		color: $white;
+	    background-color: $main;
+	    border: 1px solid $main;
+	}
+}
+
 /*-Quick Fix 5-------------------------------------------------------------*/
 /*-Quick Fix 6-------------------------------------------------------------*/
 /*-Quick Fix 7-------------------------------------------------------------*/

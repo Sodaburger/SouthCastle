@@ -45,8 +45,7 @@
 								<div class="media-body content">
 									<span class="location">Lehi, Utah</span>
 									<span class="time" datetime="2019">2018-2019</span>
-									<h3 class="media-heading title">
-										<a href="#">Adobe</a></h3>
+									<h3 class="media-heading title">Adobe</h3>
 										<small class="contractor">via Ursus Inc.</small>
 									<strong class="job-title">UI Developer 1</strong>
 									<ul class="description">
@@ -60,8 +59,7 @@
 								<div class="media-body content">
 									<span class="location">Sandy, Utah</span>
 									<span class="time" datetime="2017">2015-2017</span>
-									<h3 class="title">
-										<a href="#">DrivingSales</a></h3>
+									<h3 class="title">DrivingSales</h3>
 									<strong class="job-title">Front-End Web Developer</strong>
 									<ul class="description">
 										<li>Implemented redesign of DrivingSales.com site utilizing Laravel 5.3 and Foundation 5.5</li>
@@ -79,8 +77,7 @@
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
 									<span class="time" datetime="2015">2012-2015</span>
-									<h3 class="media-heading title">
-										<a href="blog-detail.html">ZAGG</a></h3>
+									<h3 class="media-heading title">ZAGG</h3>
 									<strong class="job-title">Front-End Web Developer</strong>
 									<ul class="description">
 										<li>Added styles to alt tags on email and increased click-through rate 30%</li>
@@ -98,8 +95,7 @@
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
 									<span class="time" datetime="2012">2010-2012</span>
-									<h3 class="media-heading title">
-										<a href="blog-detail.html">American Express</a></h3>
+									<h3 class="media-heading title">American Express</h3>
 										<small class="contractor">via Insight Global &amp; Advantage xPO</small>
 									<strong class="job-title">Technical Writer</strong>
 									<ul class="description">
@@ -115,8 +111,7 @@
 								<div class="media-body content">
 									<span class="location">Murray, Utah</span>
 									<span class="time" datetime="2010">2003-2005, 2008-2010</span>
-									<h3 class="media-heading title">
-										<a href="blog-detail.html">Sports Imaging Photography</a></h3>
+									<h3 class="media-heading title">Sports Imaging Photography</h3>
 									<strong class="job-title">Graphic/Web Designer</strong>
 									<ul class="description">
 										<li>Created custom border/background for client photographs, utilizing Photoshop, Illustrator</li>
@@ -136,8 +131,7 @@
 								<div class="media-body content">
 									<span class="location">Las Vegas, Nevada</span>
 									<span class="time" datetime="2008">2007-2008</span>
-									<h3 class="media-heading title">
-										<a href="blog-detail.html">OfficeMax</a></h3>
+									<h3 class="media-heading title">OfficeMax</h3>
 									<strong class="job-title">ImPress Associate</strong>
 									<ul class="description">
 										<li>Filled copy orders and print jobs for customers</li>
@@ -151,8 +145,7 @@
 								<div class="media-body content">
 									<span class="location">Las Vegas, Nevada</span>
 									<span class="time" datetime="2007">2007</span>
-									<h3 class="media-heading title">
-										<a href="blog-detail.html">The Venetian</a></h3>
+									<h3 class="media-heading title">The Venetian</h3>
 									<strong class="job-title">Web Development Intern</strong>
 									<ul class="description">
 										<li>Programmed for the Palazzo Website</li>
@@ -167,8 +160,7 @@
 								<div class="media-body content">
 									<span class="location">Henderson, Nevada</span>
 									<span class="time" datetime="2007">2005-2007</span>
-									<h3 class="media-heading title">
-										<a href="blog-detail.html">The Art Institute of Las Vegas</a></h3>
+									<h3 class="media-heading title">The Art Institute of Las Vegas</h3>
 									<strong class="job-title">Assistant to the Dean of Student Affairs</strong>
 									<ul class="description">
 										<li>Administrative Assistant: responsible for organizing Dean&rsquo;s projects; ensured that paperwork was processed in a timely manner</li>
@@ -189,8 +181,7 @@
 								<div class="media-body content">
 									<span class="location">Logan, Utah</span>
 									<span class="time" datetime="2018">2018</span>
-									<h3 class="media-heading title">
-										<a href="#">Cache AirFest</a></h3>
+									<h3 class="media-heading title">Cache AirFest</h3>
 									<strong class="job-title">Graphic Designer</strong>
 									<ul class="description">
 										<li>Created event logo utilizing Illustrator</li>
@@ -203,8 +194,7 @@
 								<div class="media-body content">
 									<span class="location">Phoenix, Arizona</span>
 									<span class="time" datetime="2018">2018</span>
-									<h3 class="media-heading title">
-										<a href="#">Phoenician Plumbing</a></h3>
+									<h3 class="media-heading title">Phoenician Plumbing</h3>
 									<strong class="job-title">Graphic Designer</strong>
 									<ul class="description">
 										<li>Created company logo utilizing Illustrator</li>
@@ -217,8 +207,7 @@
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
 									<span class="time" datetime="2016">2016</span>
-									<h3 class="media-heading title">
-										<a href="#">Salt Lake Fertilizing</a></h3>
+									<h3 class="media-heading title">Salt Lake Fertilizing</h3>
 									<strong class="job-title">Graphic/Web Designer</strong>
 									<ul class="description">
 										<li>Created company logo and business card, utilizing Illustrator</li>
@@ -232,8 +221,7 @@
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
 									<span class="time" datetime="2011">2014</span>
-									<h3 class="media-heading title">
-										<a href="blog-detail.html">Sego Lily Center for the Abused Deaf</a></h3>
+									<h3 class="media-heading title">Sego Lily Center for the Abused Deaf</h3>
 									<strong class="job-title">Graphic Designer</strong>
 									<ul class="description">
 										<li>Designed flyer for annual "Purple Tie Gala"</li>
@@ -247,8 +235,7 @@
 								<div class="media-body content">
 									<span class="location">North Salt Lake, Utah</span>
 									<span class="time" datetime="2012">2011-2012</span>
-									<h3 class="title">
-										<a href="#">Frozen Flavor Emporium</a></h3>
+									<h3 class="title">Frozen Flavor Emporium</h3>
 									<strong class="job-title">Graphic/Web Designer</strong>
 									<ul class="description">
 										<li>Designed company logo and branding, utilizing Illustrator, Photoshop</li>
@@ -263,8 +250,7 @@
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
 									<span class="time" datetime="2011">2010-2011</span>
-									<h3 class="media-heading title">
-										<a href="blog-detail.html">Pioneer Craft House</a></h3>
+									<h3 class="media-heading title">Pioneer Craft House</h3>
 									<strong class="job-title">Graphic/Web Designer</strong>
 									<ul class="description">
 										<li>Redesigned  Pioneer Craft House logo, utilizing Illustrator</li>

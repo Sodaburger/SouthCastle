@@ -308,7 +308,8 @@ a { color: $main; }
 /* BLOCK ......................................................................................*/
 .module-categories .thumb-overlay .published { background-color: $main; }
 
-.module-categories .content .title a { color: $main; }
+.module-categories .content .title a,
+.module-categories .content .title { color: $main; }
 
 
 /*----------------------------------------------------------------------------------------------

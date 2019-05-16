@@ -197,7 +197,7 @@ a { color: #c0392b; }
 /* BLOCK ......................................................................................*/
 .module-categories .thumb-overlay .published { background-color: #c0392b; }
 
-.module-categories .content .title a { color: #c0392b; }
+.module-categories .content .title a, .module-categories .content .title { color: #c0392b; }
 
 /*---------------------------------------------------------------------------------------------- 22) CONTENT - BLOG META ----------------------------------------------------------------------------------------------*/
 .blog-meta .blog-tags a { color: #c0392b; }
@@ -385,6 +385,12 @@ a { color: #c0392b; }
 a[href^=mailto].btn-social:after { content: ''; }
 
 /*-Quick Fix 4-------------------------------------------------------------*/
+.module-categories .nav-tabs > li > a { color: #c0392b; }
+
+.module-categories .nav-tabs > li > a:hover { color: #c0392b; }
+
+.module-categories .nav-tabs > li.active > a:hover, .module-categories .nav-tabs > li.active > a:focus, .module-categories .nav-tabs > li.active > a { color: #fff; background-color: #c0392b; border: 1px solid #c0392b; }
+
 /*-Quick Fix 5-------------------------------------------------------------*/
 /*-Quick Fix 6-------------------------------------------------------------*/
 /*-Quick Fix 7-------------------------------------------------------------*/

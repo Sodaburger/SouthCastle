@@ -40,6 +40,7 @@ This is to avoid editing the vendor files themselves, which is generally not a g
 
 /*-Helpers-----------------------------------------------------------------*/
 //This folder gathers all Sass tools and helpers we’ll use across the project (like functions and mixins)
+@import "helpers/theme-colors.scss";			// Theme Colors
 @import "helpers/colors.scss";					// Sass Variables - colors
 @import "helpers/typography.scss";				// Sass Variables - typography
 @import "helpers/interpolations.scss";			// Sass Variables - interpolations
