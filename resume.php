@@ -43,6 +43,24 @@
 							<div class="c1 col-xs-12 media wrapper-post">
 								<!-- Post content -->
 								<div class="media-body content">
+									<span class="location">Sandy, Utah</span>
+									<span class="time" datetime="2019">2019-Present</span>
+									<h3 class="media-heading title">Occupational Safety and Health Administration (OSHA)</h3>
+										<small class="contractor">via OpTech</small>
+									<strong class="job-title">Sr. Web Content Manager</strong>
+									<ul class="description">
+										<li>Complete web content requests submitted to Web Team</li>
+										<li>Construct new web pages and frequently update project workflows of all tasks to inform requestors of status</li>
+										<li>Work with web team, content creators, and project stakeholders to develop and publish new/updated website content</li>
+										<li>Create project requirement documentation for large projects.</li>
+										<li>Review requirements with management and developers, obtain buy-in, and prepare timelines</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="c2 col-xs-12 media wrapper-post">
+								<!-- Post content -->
+								<div class="media-body content">
 									<span class="location">Lehi, Utah</span>
 									<span class="time" datetime="2019">2018-2019</span>
 									<h3 class="media-heading title">Adobe</h3>
@@ -54,7 +72,7 @@
 								</div>
 							</div>
 
-							<div class="c2 col-xs-12 media wrapper-post">
+							<div class="c3 col-xs-12 media wrapper-post">
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Sandy, Utah</span>
@@ -72,7 +90,7 @@
 								</div>
 							</div>
 
-							<div class="c3 col-xs-12 media wrapper-post">
+							<div class="c4 col-xs-12 media wrapper-post">
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
@@ -90,7 +108,7 @@
 								</div>
 							</div>
 
-							<div class="c4 col-xs-12 media wrapper-post">
+							<div class="c5 col-xs-12 media wrapper-post">
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Salt Lake City, Utah</span>
@@ -106,7 +124,7 @@
 								</div>
 							</div>
 
-							<div class="c5 col-xs-12 media wrapper-post">
+							<div class="c6 col-xs-12 media wrapper-post">
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Murray, Utah</span>
@@ -126,7 +144,7 @@
 								</div>
 							</div>
 
-							<div class="c6 col-xs-12 media wrapper-post">
+							<div class="c7 col-xs-12 media wrapper-post">
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Las Vegas, Nevada</span>
@@ -155,7 +173,7 @@
 								</div>
 							</div>
 
-							<div class="c7 col-xs-12 media wrapper-post">
+							<div class="c9 col-xs-12 media wrapper-post">
 								<!-- Post content -->
 								<div class="media-body content">
 									<span class="location">Henderson, Nevada</span>

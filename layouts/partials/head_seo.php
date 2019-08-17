@@ -13,7 +13,10 @@
 	<meta property="og:image" content="/images/FacebookDefaultThumbnail.png" />
 
 <!-- GOOGLE SITE VERIFICATION -->
-	<?php include('gsv.php'); ?>
+	<?php 
+		include('gsv.php');
+		include('gs_tag.php');
+	?>
 <!-- Facebook -->
 <?php /*
 	<meta property="og:locale" content="en_GB" />
